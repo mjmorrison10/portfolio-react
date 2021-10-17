@@ -17,6 +17,8 @@ function Header() {
 export default Header;
 
 const Container = styled.header`
+  position: fixed;
+  width: 100%;
   height: auto;
   display: flex;
   align-items: center;
