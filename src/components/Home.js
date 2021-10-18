@@ -92,9 +92,13 @@ const SocialMedia = styled.div`
   stroke-width: 1px;
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
   -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
+  svg {
+    transition: 250ms ease-in-out;
+  }
   svg:hover {
     stroke: var(--accent-color-secondary);
     cursor: pointer;
+    transform: scale(1.25);
   }
 `;
 
@@ -108,6 +112,8 @@ const BottomWrapper = styled.div`
 const ExpandMoreWrapper = styled.div`
   cursor: pointer;
   transition: 250ms ease-in-out;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
   &:hover {
     transform: scale(2);
   }

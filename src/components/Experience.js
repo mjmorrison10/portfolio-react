@@ -14,7 +14,7 @@ function Experience() {
       <Typography>Determined to be the best!</Typography>
       <Skills>
         <Frontend>
-          <Computer fontSize="large" htmlColor="var(--accent-color-primary)" />
+          <Computer />
           <Typography variant="h3" component="h2">
             Front-end
           </Typography>
@@ -28,12 +28,12 @@ function Experience() {
           </ol>
           <SyncWrapper>
             <SyncWrap>
-              <Sync fontSize="large" htmlColor="var(--accent-color-primary)" />
+              <Sync />
             </SyncWrap>
           </SyncWrapper>
         </Frontend>
         <Backend>
-          <Storage fontSize="large" htmlColor="var(--accent-color-primary)" />
+          <Storage />
           <Typography variant="h3" component="h2">
             Back-end
           </Typography>
@@ -43,12 +43,12 @@ function Experience() {
           </ol>
           <SyncWrapper>
             <SyncWrap>
-              <Sync fontSize="large" htmlColor="var(--accent-color-primary)" />
+              <Sync />
             </SyncWrap>
           </SyncWrapper>
         </Backend>
         <Tools>
-          <Star fontSize="large" htmlColor="var(--accent-color-primary)" />
+          <Star />
           <Typography variant="h3" component="h2">
             Tools
           </Typography>
@@ -59,7 +59,7 @@ function Experience() {
           </ol>
           <SyncWrapper>
             <SyncWrap>
-              <Sync fontSize="large" htmlColor="var(--accent-color-primary)" />
+              <Sync />
             </SyncWrap>
           </SyncWrapper>
         </Tools>
@@ -105,6 +105,7 @@ const Skills = styled.div`
   h2 {
     margin-top: 1rem;
     color: var(--accent-color-primary);
+    font-weight: 700;
   }
   li {
     list-style-type: none;
@@ -112,19 +113,28 @@ const Skills = styled.div`
     font-weight: 700;
     margin-top: 1rem;
   }
+  svg {
+    color: var(--accent-color-primary);
+    font-size: 4rem;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
+    -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
+  }
 `;
+
 const Frontend = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 `;
+
 const Backend = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 `;
+
 const Tools = styled.div`
   display: flex;
   flex-direction: column;
@@ -154,7 +164,7 @@ const SyncWrapper = styled.div`
 `;
 
 const SyncWrap = styled.div`
-margin-top: 1rem;
+  margin-top: 1rem;
   animation: rotate 1.5s linear infinite;
   @keyframes rotate {
     to {
