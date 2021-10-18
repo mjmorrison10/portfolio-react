@@ -26,7 +26,11 @@ function Experience() {
             <li>JavaScript</li>
             <li>React JS</li>
           </ol>
-          <Sync fontSize="large" htmlColor="var(--accent-color-primary)" />
+          <SyncWrapper>
+            <SyncWrap>
+              <Sync fontSize="large" htmlColor="var(--accent-color-primary)" />
+            </SyncWrap>
+          </SyncWrapper>
         </Frontend>
         <Backend>
           <Storage fontSize="large" htmlColor="var(--accent-color-primary)" />
@@ -37,7 +41,11 @@ function Experience() {
             <li>Firestore</li>
             <li>Firebase</li>
           </ol>
-          <Sync fontSize="large" htmlColor="var(--accent-color-primary)" />
+          <SyncWrapper>
+            <SyncWrap>
+              <Sync fontSize="large" htmlColor="var(--accent-color-primary)" />
+            </SyncWrap>
+          </SyncWrapper>
         </Backend>
         <Tools>
           <Star fontSize="large" htmlColor="var(--accent-color-primary)" />
@@ -49,7 +57,11 @@ function Experience() {
             <li>VSCode</li>
             <li>Github Desktop</li>
           </ol>
-          <Sync fontSize='large' htmlColor="var(--accent-color-primary)" />
+          <SyncWrapper>
+            <SyncWrap>
+              <Sync fontSize="large" htmlColor="var(--accent-color-primary)" />
+            </SyncWrap>
+          </SyncWrapper>
         </Tools>
       </Skills>
       <BottomWrapper>
@@ -75,7 +87,13 @@ const Container = styled.div`
   justify-content: flex-start;
   align-items: center;
   h1 {
+    color: var(--accent-color-dark);
     margin-top: 5rem;
+    font-weight: bold;
+  }
+  p {
+    color: var(--accent-color-dark);
+    font-weight: bolder;
   }
 `;
 
@@ -84,33 +102,34 @@ const Skills = styled.div`
   justify-content: space-evenly;
   width: 100%;
   margin-top: 2rem;
+  h2 {
+    margin-top: 1rem;
+    color: var(--accent-color-primary);
+  }
+  li {
+    list-style-type: none;
+    color: var(--accent-color-secondary);
+    font-weight: 700;
+    margin-top: 1rem;
+  }
 `;
 const Frontend = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  li {
-    list-style-type: none;
-  }
 `;
 const Backend = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  li {
-    list-style-type: none;
-  }
 `;
 const Tools = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  li {
-    list-style-type: none;
-  }
 `;
 
 const BottomWrapper = styled.div`
@@ -125,5 +144,21 @@ const ExpandMoreWrapper = styled.div`
   color: var(--accent-color-dark);
   &:hover {
     transform: scale(2);
+  }
+`;
+
+const SyncWrapper = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+`;
+
+const SyncWrap = styled.div`
+margin-top: 1rem;
+  animation: rotate 1.5s linear infinite;
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
   }
 `;

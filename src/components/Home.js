@@ -81,7 +81,22 @@ const Container = styled.div`
   }
 `;
 
-const SocialMedia = styled.div``;
+const SocialMedia = styled.div`
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 50%;
+  flex: 1;
+  color: var(--bgcolor-secondary);
+  stroke: var(--accent-color-primary);
+  stroke-width: 1px;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
+  svg:hover {
+    stroke: var(--accent-color-secondary);
+    cursor: pointer;
+  }
+`;
 
 const BottomWrapper = styled.div`
   display: flex;
