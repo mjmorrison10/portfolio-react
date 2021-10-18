@@ -1,8 +1,13 @@
 :root {
   --bgcolor-primary: hsl(0, 0%, 75%);
   --bgcolor-secondary: hsl(0, 0%, 100%);
+  --accent-color-dark: hsl(0, 0%, 25%);
   --accent-color-primary: hsl(0, 100%, 50%);
   --accent-color-secondary: hsl(120, 100%, 25%);
 
   --border-radius: 4px;
+}
+
+.non {
+
 }

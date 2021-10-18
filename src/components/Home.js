@@ -2,17 +2,42 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import bgChristmas1 from "../assets/images/bg-christmas-3.jpg";
 import ScrollText from "react-scroll-text";
+import { Typography } from "@material-ui/core";
+import {
+  Email,
+  ExpandMore,
+  Facebook,
+  GitHub,
+  Instagram,
+  LinkedIn,
+} from "@material-ui/icons";
 
 function Home() {
   return (
     <Container>
-      <h1>Hello, I am Michael Morrison. I </h1>
+      <Typography variant="h2" component="h1">
+        Hello, I am Michael Morrison. I
+      </Typography>
       {/* <ScrollText> */}
       {/* </ScrollText> */}
-      <p>...am a dedicated Web Developer. love creating with code!</p>
-      <p>...also teach web development to people.</p>
-      <p>...enjoy solving problems and debugging!</p>
-      <p>...am dedicated to learning as much as possible!</p>
+      <Typography>
+        ...am a dedicated Web Developer. love creating with code!
+      </Typography>
+      <Typography>...also teach web development to people.</Typography>
+      <Typography>...enjoy solving problems and debugging!</Typography>
+      <Typography>...am dedicated to learning as much as possible!</Typography>
+      <SocialMedia>
+        <Facebook fontSize="large" />
+        <Instagram fontSize="large" />
+        <GitHub fontSize="large" />
+        <LinkedIn fontSize="large" />
+        <Email fontSize="large" />
+      </SocialMedia>
+      <BottomWrapper>
+        <ExpandMoreWrapper>
+          <ExpandMore />
+        </ExpandMoreWrapper>
+      </BottomWrapper>
     </Container>
   );
 }
@@ -32,10 +57,11 @@ const Container = styled.div`
   justify-content: center;
   color: var(--bgcolor-secondary);
   h1 {
-    font-size: 3rem;
+    margin-top: 8rem;
     font-weight: 900;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: var(--accent-color-primary);
+    transition: 250ms ease-in-out;
     &:hover {
       -webkit-text-stroke-color: var(--accent-color-secondary);
     }
@@ -48,8 +74,26 @@ const Container = styled.div`
     width: 75%;
     text-align: center;
     margin-top: 1rem;
+    transition: 250ms ease-in-out;
     &:hover {
       -webkit-text-stroke-color: var(--accent-color-secondary);
     }
+  }
+`;
+
+const SocialMedia = styled.div``;
+
+const BottomWrapper = styled.div`
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex: 1;
+`;
+
+const ExpandMoreWrapper = styled.div`
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+  &:hover {
+    transform: scale(2);
   }
 `;

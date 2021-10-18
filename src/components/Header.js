@@ -8,7 +8,7 @@ function Header() {
   return (
     <Container>
       <Wrapper>
-        <WebDev />
+        <WebDev  />
         <Navbar />
       </Wrapper>
     </Container>
@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 `;
 
 const WebDev = styled.img`
-  display: flex;
+  display: none;
   background-image: url(${webDev});
   height: 9.375rem;
   width: 90%;
