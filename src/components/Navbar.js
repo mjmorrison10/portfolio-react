@@ -1,13 +1,23 @@
 import { Button } from "@material-ui/core";
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import "./test.css";
 
 function Navbar() {
+  // const articleRef = useRef();
+
+  // function handleBackClick() {
+  //   articleRef.current.scrollIntoView({ behavior: "smooth" });
+  // }
   return (
     <Container>
       <Nav>
-        <Button variant="contained" color="primary">
+        <Button
+          variant="contained"
+          color="primary"
+          // ref={home}
+          // onBackClick={handleBackClick}
+        >
           about
         </Button>
         <Button variant="contained" color="primary">

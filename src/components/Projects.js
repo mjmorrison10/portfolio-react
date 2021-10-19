@@ -50,7 +50,6 @@ const Container = styled.div`
   }
   h3 {
     color: var(--accent-color-dark);
-
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
     -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
   }

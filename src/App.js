@@ -12,15 +12,16 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <Header />
-        <Home />
-        <Experience />
-        <Projects />
-        <Education />
-        <Contact />
+        <Home  />
+        <Experience  />
+        <Projects  />
+        <Education  />
+        <Contact  />
       </ThemeProvider>
     </div>
   );
 }
+
 
 export default App;
 
@@ -35,7 +36,7 @@ const theme = createTheme({
       main: "#00B32C",
       dark: "#800008",
       light: "#e6000f",
-      contrastText: '#fff',
+      contrastText: "#fff",
     },
   },
 });

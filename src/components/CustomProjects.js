@@ -153,7 +153,6 @@ const IconsWrapper = styled.div`
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-
   svg {
     margin-bottom: 0.5em;
   }
