@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import { createTheme, ThemeProvider } from "@material-ui/core";
+import Education from "./components/Education";
 
 const theme = createTheme({
   palette: {
@@ -31,6 +32,7 @@ function App() {
         <Home />
         <Experience />
         <Projects />
+        <Education />
       </ThemeProvider>
     </div>
   );
