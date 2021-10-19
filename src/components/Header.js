@@ -24,6 +24,7 @@ const Container = styled.header`
   align-items: center;
   margin-top: 0.5rem;
   justify-content: center;
+  z-index: 10;
 `;
 
 const Wrapper = styled.div`

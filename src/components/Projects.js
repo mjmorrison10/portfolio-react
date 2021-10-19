@@ -8,8 +8,10 @@ import CustomProjects from "./CustomProjects";
 function Projects() {
   return (
     <Container>
-      <Typography variant="h2" component="h1">Projects</Typography>
-      <Typography variant="h5" component="p">
+      <Typography variant="h2" component="h1">
+        Projects
+      </Typography>
+      <Typography variant="p" component="h3">
         Here are some of my projects!
       </Typography>
       <CustomProjects />
@@ -39,6 +41,18 @@ const Container = styled.div`
   h1 {
     color: var(--accent-color-dark);
     font-weight: 500;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+    -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+  }
+  h2 {
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+    -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+  }
+  h3 {
+    color: var(--accent-color-dark);
+
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+    -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
   }
 `;
 
@@ -52,6 +66,8 @@ const ExpandMoreWrapper = styled.div`
   cursor: pointer;
   transition: 250ms ease-in-out;
   color: var(--accent-color-dark);
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
   &:hover {
     transform: scale(2);
   }

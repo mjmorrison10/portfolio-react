@@ -8,19 +8,22 @@ import Background from "../assets/images/bg-white-3.jpg";
 function Education() {
   return (
     <Container>
-      <Typography variant="h1" color="primary">
+      <Typography variant="h2" component="h1" color="primary">
         Education
+      </Typography>
+      <Typography color="secondary">
+        Years ago, I learned a few programming/scripting languages, primarily
+        MSL where I learned RegEx and others.
       </Typography>
       <Typography color="secondary">
         Over the past year, I have educated myself and others, remotely, on the
         following:
       </Typography>
-
       <WordCloudWrap>
         <ReactWordcloud
           words={words}
           options={{
-            fontSizes: [16, 100],
+            fontSizes: [20, 60],
           }}
         />
       </WordCloudWrap>
@@ -30,7 +33,6 @@ function Education() {
           <ExpandMore />
         </ExpandMoreWrapper>
       </BottomWrapper>
-
     </Container>
   );
 }
@@ -49,15 +51,24 @@ const Container = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding-top: 4rem;
+  h1 {
+    font-weight: bold;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+  }
   p {
     font-weight: 700;
     font-size: 1.5rem;
     width: 80%;
     text-align: center;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
   }
 `;
 
 const WordCloudWrap = styled.div`
+  height: 100%;
+  width: 100%;
 `;
 
 const BottomWrapper = styled.div`
@@ -70,11 +81,12 @@ const ExpandMoreWrapper = styled.div`
   cursor: pointer;
   transition: 250ms ease-in-out;
   color: var(--accent-color-dark);
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
   &:hover {
     transform: scale(2);
   }
 `;
-
 
 const words = [
   {
@@ -115,7 +127,7 @@ const words = [
   },
   {
     text: "MSL",
-    value: 10,
+    value: 40,
   },
   {
     text: "Firebase",
@@ -125,8 +137,12 @@ const words = [
     text: "Firestore",
     value: 20,
   },
+  {
+    text: "RegEx",
+    value: 38,
+  },
 ];
 
 const options = {
-  fontSizes: [16, 100],
+  fontSizes: [20, 60],
 };

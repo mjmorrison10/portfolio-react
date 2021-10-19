@@ -24,11 +24,17 @@ function Home() {
       <Typography>...enjoy solving problems and debugging!</Typography>
       <Typography>...am dedicated to learning as much as possible!</Typography>
       <SocialMedia>
-        <Facebook fontSize="large" target="https://bit.ly/facebook-mjm" />
-        <Instagram fontSize="large" target="https://bit.ly/instagram-mjm" />
-        <GitHub fontSize="large" target="https://bit.ly/github-mjm" />
-        <LinkedIn fontSize="large" target="https://bit.ly/linkedin-mjm" />
-        <Email fontSize="large" target="mjmorrison10@outlook.com" />
+
+        <Facebook fontSize="large" onClick={() => window.open('https://bit.ly/facebook-mjm', '_blank')} />
+        
+        <Instagram fontSize="large" onClick={() => window.open('https://bit.ly/instagram-mjm', '_blank')} />
+        
+        <GitHub fontSize="large" onClick={() => window.open('https://bit.ly/github-mjm', '_blank')} />
+        
+        <LinkedIn fontSize="large" onClick={() => window.open('https://bit.ly/linkedin-mjm', '_blank')} />
+        
+        <Email fontSize="large" onClick={() => window.open('mailto:mjmorrison10@outlook.com', '_blank')} />
+      
       </SocialMedia>
       <BottomWrapper>
         <ExpandMoreWrapper>
@@ -39,6 +45,7 @@ function Home() {
   );
 }
 
+// fdsfdsjhghdsfdsfdgjhj2fds1sd21121dsfdsfhgdsjhg
 
 export default Home;
 

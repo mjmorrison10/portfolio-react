@@ -67,7 +67,6 @@ function CustomProjects() {
   );
 }
 
-// fdsfsdfsdfshhjnngghjhhj454455jkfdshfhgfdafdsfds4545klfdsbnhghnhdsgnfnbfgfnfgffnfrfgffggggbfgfhgfbvv45lkklnhgngnhghgfhgfhhfgnhnhgnghhhhgnhgnghgjghjjhgjhgjghjhjhjgjhghgfnhhfhfhfhghggfgf
 
 export default CustomProjects;
 
@@ -82,6 +81,7 @@ const Projectwrapper = styled.div`
 `;
 
 const Container = styled.div`
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,4 +158,3 @@ const IconsWrapper = styled.div`
     margin-bottom: 0.5em;
   }
 `;
-
