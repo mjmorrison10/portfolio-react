@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import bgChristmas1 from "../assets/images/bg-christmas-3.jpg";
-import ScrollText from "react-scroll-text";
 import { Typography } from "@material-ui/core";
 import {
   Email,
@@ -18,8 +17,6 @@ function Home() {
       <Typography variant="h2" component="h1">
         Hello, I am Michael Morrison. I
       </Typography>
-      {/* <ScrollText> */}
-      {/* </ScrollText> */}
       <Typography>
         ...am a dedicated Web Developer. love creating with code!
       </Typography>
@@ -27,11 +24,11 @@ function Home() {
       <Typography>...enjoy solving problems and debugging!</Typography>
       <Typography>...am dedicated to learning as much as possible!</Typography>
       <SocialMedia>
-        <Facebook fontSize="large" />
-        <Instagram fontSize="large" />
-        <GitHub fontSize="large" />
-        <LinkedIn fontSize="large" />
-        <Email fontSize="large" />
+        <Facebook fontSize="large" target="https://bit.ly/facebook-mjm" />
+        <Instagram fontSize="large" target="https://bit.ly/instagram-mjm" />
+        <GitHub fontSize="large" target="https://bit.ly/github-mjm" />
+        <LinkedIn fontSize="large" target="https://bit.ly/linkedin-mjm" />
+        <Email fontSize="large" target="mjmorrison10@outlook.com" />
       </SocialMedia>
       <BottomWrapper>
         <ExpandMoreWrapper>
@@ -41,6 +38,7 @@ function Home() {
     </Container>
   );
 }
+
 
 export default Home;
 

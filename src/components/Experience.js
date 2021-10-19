@@ -1,5 +1,4 @@
 import { Typography } from "@material-ui/core";
-import { pink, red } from "@material-ui/core/colors";
 import { Computer, ExpandMore, Star, Storage, Sync } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
@@ -151,7 +150,8 @@ const BottomWrapper = styled.div`
 const ExpandMoreWrapper = styled.div`
   cursor: pointer;
   transition: 250ms ease-in-out;
-  color: var(--accent-color-dark);
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
   &:hover {
     transform: scale(2);
   }
