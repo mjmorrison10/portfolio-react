@@ -21,6 +21,7 @@ function Contact() {
           variant="contained"
           color="secondary"
           href="mjmorrison10@outlook.com"
+          onClick={() => window.open('mailto:mjmorrison10@outlook.com', '_blank')}
         >
           Contact me
         </Button>

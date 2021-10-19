@@ -22,8 +22,12 @@ function Navbar() {
         <Button variant="contained" color="primary">
           contact me
         </Button>
-        <Button variant="contained" color="primary">
-          resume
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => window.open("https://bit.ly/MJMPortfolio", "_blank")}
+        >
+          Old Site
         </Button>
       </Nav>
     </Container>
