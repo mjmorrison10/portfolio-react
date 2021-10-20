@@ -6,7 +6,7 @@ import Background from "../assets/images/bg-white-1.jpg";
 
 function Experience() {
   return (
-    <Container>
+    <Container id="experience">
       <Typography variant="h2" component="h1">
         My Experience
       </Typography>

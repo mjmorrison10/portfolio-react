@@ -1,5 +1,6 @@
 import { Button } from "@material-ui/core";
 import React, { useRef } from "react";
+import { Link } from "react-scroll";
 import styled from "styled-components";
 import "./test.css";
 
@@ -12,17 +13,16 @@ function Navbar() {
   return (
     <Container>
       <Nav>
-        <Button
-          variant="contained"
-          color="primary"
-          // ref={home}
-          // onBackClick={handleBackClick}
-        >
-          about
-        </Button>
+        <Link to="page1" smooth={true}>
+          <Button variant="contained" color="primary">
+            about
+          </Button>
+        </Link>
+
         <Button variant="contained" color="primary">
           experience
         </Button>
+
         <Button variant="contained" color="primary">
           projects
         </Button>

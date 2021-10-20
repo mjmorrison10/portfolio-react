@@ -13,7 +13,7 @@ import {
 
 function Home() {
   return (
-    <Container>
+    <Container id="home" >
       <Typography variant="h2" component="h1">
         Hello, I am Michael Morrison. I
       </Typography>

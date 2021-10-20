@@ -17,21 +17,22 @@ function CustomProjects() {
   let settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 250,
     slidesToShow: 1,
     SlidesToScroll: 1,
     autoplay: true,
+    autoplaySpeed: 5000,
   };
 
   return (
     <Container {...settings}>
-      <Thdistributors />
       <Michaeljobs />
       <RockPaperScissors />
-      <CMC />
-      <OSRS />
       <TicTacToe />
       <FAQAccordionCard />
+      <CMC />
+      <Thdistributors />
+      <OSRS />
       <Sunnyside />
     </Container>
   );
