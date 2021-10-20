@@ -67,7 +67,7 @@ const Container = styled.div`
 `;
 
 const WordCloudWrap = styled.div`
-  height: 70vh;
+  height: 100%;
   width: 100%;
   /* @media (max-width: 1000px) {
     height: auto;

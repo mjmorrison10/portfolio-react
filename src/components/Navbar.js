@@ -13,25 +13,36 @@ function Navbar() {
   return (
     <Container>
       <Nav>
-        <Link to="page1" smooth={true}>
+        <Link to="home" smooth={true}>
           <Button variant="contained" color="primary">
-            about
+            home
           </Button>
         </Link>
 
-        <Button variant="contained" color="primary">
-          experience
-        </Button>
+        <Link to="experience" smooth={true}>
+          <Button variant="contained" color="primary">
+            experience
+          </Button>
+        </Link>
 
-        <Button variant="contained" color="primary">
-          projects
-        </Button>
-        <Button variant="contained" color="primary">
-          education
-        </Button>
-        <Button variant="contained" color="primary">
-          contact me
-        </Button>
+        <Link to="projects" smooth={true}>
+          <Button variant="contained" color="primary">
+            projects
+          </Button>
+        </Link>
+
+        <Link to="education" smooth={true}>
+          <Button variant="contained" color="primary">
+            education
+          </Button>
+        </Link>
+
+        <Link to="contact" smooth={true}>
+          <Button variant="contained" color="primary">
+            contact me
+          </Button>
+        </Link>
+
         <Button
           variant="contained"
           color="primary"
