@@ -6,6 +6,12 @@ import Michaeljobs from "./Projects/Michaeljobs";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import RockPaperScissors from "./Projects/RockPaperScissors";
+import CMC from "./Projects/CMC";
+import OSRS from "./Projects/OSRS";
+import TicTacToe from "./Projects/TicTacToe";
+import FAQAccordionCard from "./Projects/FAQAccordionCard";
+import Sunnyside from "./Projects/Sunnyside";
 
 function CustomProjects() {
   let settings = {
@@ -21,6 +27,12 @@ function CustomProjects() {
     <Container {...settings}>
       <Thdistributors />
       <Michaeljobs />
+      <RockPaperScissors />
+      <CMC />
+      <OSRS />
+      <TicTacToe />
+      <FAQAccordionCard />
+      <Sunnyside />
     </Container>
   );
 }
@@ -28,6 +40,7 @@ function CustomProjects() {
 export default CustomProjects;
 
 const Container = styled(Slider)`
+  padding-top: 3rem;
   ul li button {
     &:before {
       font-size: 10px;
@@ -45,5 +58,4 @@ const Container = styled(Slider)`
   button {
     z-index: 1;
   }
-
 `;

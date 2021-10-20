@@ -22,7 +22,7 @@ function Michaeljobs() {
           <LanguageRounded color="primary" />
         </IconsWrapper>
         <Typography>
-          Search for Software Developer career opportunities using Michael Jobs.
+          Search for Software Developer career opportunities using Michael Jobs - Like Indeed but my own design. 
         </Typography>
         <Button
           variant="contained"
@@ -40,9 +40,10 @@ function Michaeljobs() {
 export default Michaeljobs;
 
 const Projectwrapper = styled.div`
-  width: 90%;
+  margin: 0 2rem;
   padding: 1rem;
   display: flex;
+  height: 50vh;
   border-radius: var(--border-radius);
   margin-bottom: 1rem;
   -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
@@ -50,9 +51,9 @@ const Projectwrapper = styled.div`
 `;
 
 const ProjectInfo = styled.div`
-  flex: 0.5;
+  flex: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   margin-right: 1em;
@@ -72,11 +73,15 @@ const ProjectInfo = styled.div`
     margin-bottom: 0.5em;
   }
   p {
+    align-self: center;
     font-size: 1.5em;
     color: var(--accent-color-secondary);
     margin-bottom: 0.5em;
     font-weight: 500;
-    width: 100%;
+    width: 75%;
+  }
+  a {
+    align-self: flex-end;
   }
 `;
 
@@ -92,7 +97,6 @@ const ProjectImage = styled.div`
     transform: scale(1.05);
   }
 `;
-
 
 const IconsWrapper = styled.div`
   display: flex;

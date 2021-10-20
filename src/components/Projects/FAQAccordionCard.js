@@ -6,38 +6,40 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-import THDistributors from "../../assets/images/thdistributors-clone.png";
+import FAQImage from "../../assets/images/project2.png";
 
-function Thdistributors() {
-  return (
-    <Projectwrapper>
-      <ProjectInfo>
-        <Typography variant="h2">total home distributors</Typography>
-        <Typography variant="h3" color="primary">
-          web
-        </Typography>
-        <IconsWrapper>
-          <ComputerOutlined color="primary" />
-          <MobileScreenShareRounded color="primary" />
-          <LanguageRounded color="primary" />
-        </IconsWrapper>
-        <Typography>
-          A clone landing page using HTML, CSS, and JavaScript. 
-        </Typography>
-        <Button
-          variant="contained"
-          color="primary"
-          href="https://bit.ly/thdistributors-mjm"
-        >
-          Visit Website
-        </Button>
-      </ProjectInfo>
-      <ProjectImage />
-    </Projectwrapper>
-  );
+function FAQAccordionCard() {
+    return (
+        <Projectwrapper>
+        <ProjectInfo>
+          <Typography variant="h2">FAQ ACCORDION CARD</Typography>
+          <Typography variant="h3" color="primary">
+            web
+          </Typography>
+          <IconsWrapper>
+            <ComputerOutlined color="primary" />
+            <MobileScreenShareRounded color="primary" />
+            <LanguageRounded color="primary" />
+          </IconsWrapper>
+          <Typography>
+          In this challenge, you'll be building out an FAQ accordion. This is an extremely common front-end pattern, so it's a great opportunity to get some practice in!
+          </Typography>
+          <Button
+            variant="contained"
+            color="primary"
+            href="https://bit.ly/FAQ-accordion-card-mjm"
+          >
+            Visit Website
+          </Button>
+        </ProjectInfo>
+        <ProjectImage />
+      </Projectwrapper>
+    )
 }
 
-export default Thdistributors;
+
+export default FAQAccordionCard
+
 
 const Projectwrapper = styled.div`
   margin: 0 2rem;
@@ -56,6 +58,7 @@ const ProjectInfo = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  margin-right: 1em;
   h2 {
     align-self: center;
     text-transform: capitalize;
@@ -87,7 +90,7 @@ const ProjectInfo = styled.div`
 const ProjectImage = styled.div`
   margin-left: 1em;
   flex: 1;
-  background-image: url(${THDistributors});
+  background-image: url(${FAQImage});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: contain;

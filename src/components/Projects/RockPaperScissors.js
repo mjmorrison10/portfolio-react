@@ -6,38 +6,39 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-import THDistributors from "../../assets/images/thdistributors-clone.png";
+import RPS from "../../assets/images/rockpaperscissors.png";
 
-function Thdistributors() {
-  return (
-    <Projectwrapper>
-      <ProjectInfo>
-        <Typography variant="h2">total home distributors</Typography>
-        <Typography variant="h3" color="primary">
-          web
-        </Typography>
-        <IconsWrapper>
-          <ComputerOutlined color="primary" />
-          <MobileScreenShareRounded color="primary" />
-          <LanguageRounded color="primary" />
-        </IconsWrapper>
-        <Typography>
-          A clone landing page using HTML, CSS, and JavaScript. 
-        </Typography>
-        <Button
-          variant="contained"
-          color="primary"
-          href="https://bit.ly/thdistributors-mjm"
-        >
-          Visit Website
-        </Button>
-      </ProjectInfo>
-      <ProjectImage />
-    </Projectwrapper>
-  );
+function RockPaperScissors() {
+    return (
+        <Projectwrapper>
+        <ProjectInfo>
+          <Typography variant="h2">rock, paper, scissors</Typography>
+          <Typography variant="h3" color="primary">
+            web
+          </Typography>
+          <IconsWrapper>
+            <ComputerOutlined color="primary" />
+            <MobileScreenShareRounded color="primary" />
+            <LanguageRounded color="primary" />
+          </IconsWrapper>
+          <Typography>
+            Rock, Paper, Scissors game with score-counter using JavaScript.
+          </Typography>
+          <Button
+            variant="contained"
+            color="primary"
+            href="https://bit.ly/mjm-rockpaperscissors"
+          >
+            Visit Website
+          </Button>
+        </ProjectInfo>
+        <ProjectImage />
+      </Projectwrapper>
+    )
 }
 
-export default Thdistributors;
+export default RockPaperScissors
+
 
 const Projectwrapper = styled.div`
   margin: 0 2rem;
@@ -56,6 +57,7 @@ const ProjectInfo = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  margin-right: 1em;
   h2 {
     align-self: center;
     text-transform: capitalize;
@@ -87,7 +89,7 @@ const ProjectInfo = styled.div`
 const ProjectImage = styled.div`
   margin-left: 1em;
   flex: 1;
-  background-image: url(${THDistributors});
+  background-image: url(${RPS});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: contain;

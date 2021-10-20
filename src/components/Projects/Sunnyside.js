@@ -6,13 +6,13 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-import THDistributors from "../../assets/images/thdistributors-clone.png";
+import SunnysideImage from "../../assets/images/sunnyside.png";
 
-function Thdistributors() {
+function Sunnyside() {
   return (
     <Projectwrapper>
       <ProjectInfo>
-        <Typography variant="h2">total home distributors</Typography>
+        <Typography variant="h2">sunnyside agency landing page</Typography>
         <Typography variant="h3" color="primary">
           web
         </Typography>
@@ -22,12 +22,14 @@ function Thdistributors() {
           <LanguageRounded color="primary" />
         </IconsWrapper>
         <Typography>
-          A clone landing page using HTML, CSS, and JavaScript. 
+          This challenge will be a perfect test of your layout and responsive
+          skills. There's a tiny bit of JS for the mobile menu, but the focus is
+          HTML and CSS.
         </Typography>
         <Button
           variant="contained"
           color="primary"
-          href="https://bit.ly/thdistributors-mjm"
+          href="https://bit.ly/FAQ-accordion-card-mjm"
         >
           Visit Website
         </Button>
@@ -37,7 +39,7 @@ function Thdistributors() {
   );
 }
 
-export default Thdistributors;
+export default Sunnyside;
 
 const Projectwrapper = styled.div`
   margin: 0 2rem;
@@ -56,6 +58,7 @@ const ProjectInfo = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  margin-right: 1em;
   h2 {
     align-self: center;
     text-transform: capitalize;
@@ -87,7 +90,7 @@ const ProjectInfo = styled.div`
 const ProjectImage = styled.div`
   margin-left: 1em;
   flex: 1;
-  background-image: url(${THDistributors});
+  background-image: url(${SunnysideImage});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: contain;

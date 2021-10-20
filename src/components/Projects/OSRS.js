@@ -6,13 +6,13 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-import THDistributors from "../../assets/images/thdistributors-clone.png";
+import OSRSImage from "../../assets/images/project1.png";
 
-function Thdistributors() {
+function OSRS() {
   return (
     <Projectwrapper>
       <ProjectInfo>
-        <Typography variant="h2">total home distributors</Typography>
+        <Typography variant="h2">Oldschool RuneScape Clone</Typography>
         <Typography variant="h3" color="primary">
           web
         </Typography>
@@ -22,12 +22,13 @@ function Thdistributors() {
           <LanguageRounded color="primary" />
         </IconsWrapper>
         <Typography>
-          A clone landing page using HTML, CSS, and JavaScript. 
+          Based on the Old School RuneScape Website, compliments to JaGeX, I
+          developed a clone replica of the landing page.
         </Typography>
         <Button
           variant="contained"
           color="primary"
-          href="https://bit.ly/thdistributors-mjm"
+          href="https://bit.ly/osrs-clone"
         >
           Visit Website
         </Button>
@@ -37,7 +38,7 @@ function Thdistributors() {
   );
 }
 
-export default Thdistributors;
+export default OSRS;
 
 const Projectwrapper = styled.div`
   margin: 0 2rem;
@@ -56,6 +57,7 @@ const ProjectInfo = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  margin-right: 1em;
   h2 {
     align-self: center;
     text-transform: capitalize;
@@ -87,7 +89,7 @@ const ProjectInfo = styled.div`
 const ProjectImage = styled.div`
   margin-left: 1em;
   flex: 1;
-  background-image: url(${THDistributors});
+  background-image: url(${OSRSImage});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: contain;
