@@ -15,11 +15,11 @@ function Projects() {
         Here are some of my projects!
       </Typography>
       <CustomProjects />
-      <BottomWrapper>
+      {/* <BottomWrapper>
         <ExpandMoreWrapper>
           <ExpandMore />
         </ExpandMoreWrapper>
-      </BottomWrapper>
+      </BottomWrapper> */}
     </Container>
   );
 }
@@ -27,18 +27,18 @@ function Projects() {
 export default Projects;
 
 const Container = styled.div`
+  background-color: blue;
+  position: relative;
   height: 100vh;
   width: 100vw;
   background-image: url(${Background});
   background-repeat: no-repeat, no-repeat;
   background-position: 0% 0%;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   padding-top: 4rem;
+  text-align: center;
   h1 {
+    padding-top: 4rem;
     color: var(--accent-color-dark);
     font-weight: 500;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
@@ -52,16 +52,23 @@ const Container = styled.div`
     color: var(--accent-color-dark);
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
     -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+    margin-bottom: 1rem;
   }
 `;
 
 const BottomWrapper = styled.div`
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
+  /* flex-grow: 1; */
+  float: bottom;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: flex-end; */
+  /* height: auto; */
+  background-color: blue;
 `;
 
 const ExpandMoreWrapper = styled.div`
+  position: relative;
+  bottom: 0;
   cursor: pointer;
   transition: 250ms ease-in-out;
   color: var(--accent-color-dark);

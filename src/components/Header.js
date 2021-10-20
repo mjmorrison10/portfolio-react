@@ -65,4 +65,3 @@ const WebDev = styled.img`
   }
 `;
 
-// fdsf26
