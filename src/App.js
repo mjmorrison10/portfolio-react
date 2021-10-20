@@ -6,13 +6,10 @@ import Projects from "./components/Projects";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
-import CustomProjects from "./components/CustomProjects";
 
 function App() {
   return (
-    <div className="App">
       <ThemeProvider theme={theme}>
-        {/* <CustomProjects /> */}
         <Header />
         <Home  />
         <Experience  />
@@ -20,7 +17,6 @@ function App() {
         <Education  />
         <Contact  />
       </ThemeProvider>
-    </div>
   );
 }
 

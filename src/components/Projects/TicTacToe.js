@@ -6,13 +6,14 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-import THDistributors from "../../assets/images/thdistributors-clone.png";
+import TTTImage from "../../assets/images/project2.png";
 
-function Thdistributors() {
+
+function TicTacToe() {
   return (
     <Projectwrapper>
       <ProjectInfo>
-        <Typography variant="h2">total home distributors</Typography>
+        <Typography variant="h2">tic tac toe</Typography>
         <Typography variant="h3" color="primary">
           web
         </Typography>
@@ -22,12 +23,12 @@ function Thdistributors() {
           <LanguageRounded color="primary" />
         </IconsWrapper>
         <Typography>
-          A clone landing page using HTML, CSS, and JavaScript. 
+          Play Tic-Tac-Toe with this small project utilizing JavaScript!
         </Typography>
         <Button
           variant="contained"
           color="primary"
-          href="https://bit.ly/thdistributors-mjm"
+          href="https://bit.ly/osrs-clone"
         >
           Visit Website
         </Button>
@@ -37,7 +38,7 @@ function Thdistributors() {
   );
 }
 
-export default Thdistributors;
+export default TicTacToe;
 
 const Projectwrapper = styled.div`
   margin: 0 2rem;
@@ -56,6 +57,7 @@ const ProjectInfo = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  margin-right: 1em;
   h2 {
     align-self: center;
     text-transform: capitalize;
@@ -87,7 +89,7 @@ const ProjectInfo = styled.div`
 const ProjectImage = styled.div`
   margin-left: 1em;
   flex: 1;
-  background-image: url(${THDistributors});
+  background-image: url(${TTTImage});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: contain;
