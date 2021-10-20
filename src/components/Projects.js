@@ -7,7 +7,7 @@ import CustomProjects from "./CustomProjects";
 
 function Projects() {
   return (
-    <Container>
+    <Container id="projects" >
       <Typography variant="h2" component="h1">
         Projects
       </Typography>
@@ -23,8 +23,6 @@ function Projects() {
     </Container>
   );
 }
-
-// fdsfdsf
 
 export default Projects;
 

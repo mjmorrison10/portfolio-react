@@ -7,7 +7,7 @@ import Background from "../assets/images/bg-white-3.jpg";
 
 function Education() {
   return (
-    <Container>
+    <Container id="education" >
       <Typography variant="h2" component="h1" color="primary">
         Education
       </Typography>

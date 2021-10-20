@@ -7,7 +7,7 @@ import Footer from "./Footer";
 
 function Contact() {
   return (
-    <Container>
+    <Container id="contact" >
       <ContactWrapper>
         <TextWrapper>
           <Typography variant="h3" component="h1" color="primary">
