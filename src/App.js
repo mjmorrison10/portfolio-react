@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar";
 import { Link } from "react-scroll";
 import styled from "styled-components";
 
-// fdsdsdsfdssfdfgbsdhggdgfdsadsfdsfdsfds
+// fdsdsdsfdssfdffdsfdsfdsdsdsfgbsdhggdgfdsdsaddsdsfdsfdsfds
 
 
 function App() {
