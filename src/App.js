@@ -6,10 +6,11 @@ import Projects from "./components/Projects";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
+import { grey, orange, purple } from "@material-ui/core/colors";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={halloween}>
       <Header />
       <Home />
       <Experience />
@@ -20,9 +21,11 @@ function App() {
   );
 }
 
+
+
 export default App;
 
-const theme = createTheme({
+const christmas = createTheme({
   palette: {
     primary: {
       main: "#B3000C",
@@ -34,6 +37,25 @@ const theme = createTheme({
       dark: "#800008",
       light: "#e6000f",
       contrastText: "#fff",
+    },
+  },
+});
+
+const halloween = createTheme({
+  palette: {
+    primary: {
+      main: orange[700],
+      dark: purple[500],
+      light: purple[300],
+    },
+    secondary: {
+      main: purple[700],
+      dark: orange[500],
+      light: orange[300],
+      contrastText: "#fff",
+    },
+    success: {
+      main: grey[700],
     },
   },
 });

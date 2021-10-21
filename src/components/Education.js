@@ -3,7 +3,7 @@ import { ExpandMore } from "@material-ui/icons";
 import React from "react";
 import ReactWordcloud from "react-wordcloud";
 import styled from "styled-components";
-import Background from "../assets/images/bg-white-3.jpg";
+import Background from "../assets/images/bg-orange-3.jpg";
 
 function Education() {
   return (
@@ -30,7 +30,7 @@ function Education() {
 
       <BottomWrapper>
         <ExpandMoreWrapper>
-          <ExpandMore />
+          <ExpandMore color="primary"/>
         </ExpandMoreWrapper>
       </BottomWrapper>
     </Container>

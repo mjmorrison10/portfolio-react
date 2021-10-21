@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import bgChristmas1 from "../assets/images/bg-christmas-3.jpg";
+import bgChristmas1 from "../assets/images/bg-october-2.jpg";
 import { Typography } from "@material-ui/core";
 import {
   Email,
@@ -14,31 +14,31 @@ import {
 function Home() {
   return (
     <Container id="home" >
-      <Typography variant="h2" component="h1">
+      <Typography variant="h2" component="h1" color="primary">
         Hello, I am Michael Morrison. I
       </Typography>
-      <Typography>
+      <Typography color="secondary">
         ...am a dedicated Web Developer. love creating with code!
       </Typography>
-      <Typography>...also teach web development to people.</Typography>
-      <Typography>...enjoy solving problems and debugging!</Typography>
-      <Typography>...am dedicated to learning as much as possible!</Typography>
+      <Typography color="secondary">...also teach web development to people.</Typography>
+      <Typography color="secondary">...enjoy solving problems and debugging!</Typography>
+      <Typography color="secondary">...am dedicated to learning as much as possible!</Typography>
       <SocialMedia>
 
-        <Facebook fontSize="large" onClick={() => window.open('https://bit.ly/facebook-mjm', '_blank')} />
+        <Facebook color='primary' fontSize="large" onClick={() => window.open('https://bit.ly/facebook-mjm', '_blank')} />
         
-        <Instagram fontSize="large" onClick={() => window.open('https://bit.ly/instagram-mjm', '_blank')} />
+        <Instagram color='primary' fontSize="large" onClick={() => window.open('https://bit.ly/instagram-mjm', '_blank')} />
         
-        <GitHub fontSize="large" onClick={() => window.open('https://bit.ly/github-mjm', '_blank')} />
+        <GitHub color='primary' fontSize="large" onClick={() => window.open('https://bit.ly/github-mjm', '_blank')} />
         
-        <LinkedIn fontSize="large" onClick={() => window.open('https://bit.ly/linkedin-mjm', '_blank')} />
+        <LinkedIn color='primary' fontSize="large" onClick={() => window.open('https://bit.ly/linkedin-mjm', '_blank')} />
         
-        <Email fontSize="large" onClick={() => window.open('mailto:mjmorrison10@outlook.com', '_blank')} />
+        <Email color='primary' fontSize="large" onClick={() => window.open('mailto:mjmorrison10@outlook.com', '_blank')} />
       
       </SocialMedia>
       <BottomWrapper>
         <ExpandMoreWrapper>
-          <ExpandMore />
+          <ExpandMore color="primary"/>
         </ExpandMoreWrapper>
       </BottomWrapper>
     </Container>
@@ -61,6 +61,8 @@ const Container = styled.div`
   justify-content: center;
   color: var(--bgcolor-secondary);
   h1 {
+    text-shadow: -2px 0 rgba(255, 255, 255, 0.5), 0 2px rgba(255, 255, 255, 0.5), 2px 0 rgba(255, 255, 255, 0.5), 0 -2px rgba(255, 255, 255, 0.5);
+
     margin-top: 8rem;
     font-weight: 900;
     -webkit-text-stroke-width: 1.5px;
@@ -71,6 +73,8 @@ const Container = styled.div`
     }
   }
   p {
+    text-shadow: -1.5px 0 rgba(255, 255, 255, 0.5), 0 1.5px rgba(255, 255, 255, 0.5), 1.5px 0 rgba(255, 255, 255, 0.5), 0 -1.5px rgba(255, 255, 255, 0.5);
+
     font-size: 1.8rem;
     font-weight: 700;
     -webkit-text-stroke-width: 1.5px;

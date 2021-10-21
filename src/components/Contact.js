@@ -2,7 +2,7 @@ import { Button, Typography } from "@material-ui/core";
 import { ExpandMore } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-import Background from "../assets/images/bg-white-4.jpg";
+import Background from "../assets/images/bg-orange-4.jpg";
 import Footer from "./Footer";
 
 function Contact() {
@@ -55,6 +55,15 @@ const TextWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  h1 {
+    text-shadow: -2px 0 rgba(0, 0, 0, 0.5), 0 2px rgba(0, 0, 0, 0.5), 2px 0 rgba(0, 0, 0, 0.5), 0 -2px rgba(0, 0, 0, 0.5);
+    
+    font-weight: 900;
+  }
+  h3 {
+    text-shadow: -2px 0 rgba(0, 0, 0, 0.5), 0 2px rgba(0, 0, 0, 0.5), 2px 0 rgba(0, 0, 0, 0.5), 0 -2px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+  }
 `;
 
 const FooterWrapper = styled.div`

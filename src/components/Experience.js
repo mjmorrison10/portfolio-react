@@ -2,21 +2,24 @@ import { Typography } from "@material-ui/core";
 import { Computer, ExpandMore, Star, Storage, Sync } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-import Background from "../assets/images/bg-white-1.jpg";
+import Background from "../assets/images/bg-orange-1.jpg";
+
+// fdsdytdsfsfdsdsdsd
 
 function Experience() {
   return (
     <Container id="experience">
-      <Typography variant="h2" component="h1">
+      <Typography variant="h2" component="h1" color="primary">
         My Experience
       </Typography>
-      <Typography>Determined to be the best!</Typography>
+      <Typography color="secondary">Determined to be the best!</Typography>
       <Skills>
         <Frontend>
-          <Computer />
-          <Typography variant="h3" component="h2">
+          <Computer color="primary" />
+          <Typography variant="h3" component="h2" color="secondary">
             Front-end
           </Typography>
+          <Typography color="secondary">
           <ol>
             <li>HTML</li>
             <li>CSS</li>
@@ -25,47 +28,52 @@ function Experience() {
             <li>JavaScript</li>
             <li>React JS</li>
           </ol>
+          </Typography>
           <SyncWrapper>
             <SyncWrap>
-              <Sync />
+              <Sync color="primary"/>
             </SyncWrap>
           </SyncWrapper>
         </Frontend>
         <Backend>
-          <Storage />
-          <Typography variant="h3" component="h2">
+          <Storage color="primary" />
+          <Typography variant="h3" component="h2" color="secondary">
             Back-end
           </Typography>
-          <ol>
-            <li>Firestore</li>
-            <li>Firebase</li>
-          </ol>
+          <Typography color="secondary">
+            <ol>
+              <li>Firestore</li>
+              <li>Firebase</li>
+            </ol>
+          </Typography>
           <SyncWrapper>
             <SyncWrap>
-              <Sync />
+              <Sync color="primary" />
             </SyncWrap>
           </SyncWrapper>
         </Backend>
         <Tools>
-          <Star />
-          <Typography variant="h3" component="h2">
+          <Star color="primary"/>
+          <Typography variant="h3" component="h2" color="secondary">
             Tools
           </Typography>
-          <ol>
-            <li>Git</li>
-            <li>VSCode</li>
-            <li>Github Desktop</li>
-          </ol>
+          <Typography color="secondary">
+            <ol>
+              <li>Git</li>
+              <li>VSCode</li>
+              <li>Github Desktop</li>
+            </ol>
+          </Typography>
           <SyncWrapper>
             <SyncWrap>
-              <Sync />
+              <Sync color="primary" />
             </SyncWrap>
           </SyncWrapper>
         </Tools>
       </Skills>
       <BottomWrapper>
         <ExpandMoreWrapper>
-          <ExpandMore />
+          <ExpandMore color="primary"/>
         </ExpandMoreWrapper>
       </BottomWrapper>
     </Container>
@@ -86,12 +94,12 @@ const Container = styled.div`
   justify-content: flex-start;
   align-items: center;
   h1 {
-    color: var(--accent-color-dark);
+    /* color: var(--accent-color-dark); */
     margin-top: 5rem;
     font-weight: bold;
   }
   p {
-    color: var(--accent-color-dark);
+    /* color: var(--accent-color-dark); */
     font-weight: bolder;
   }
 `;
@@ -102,18 +110,22 @@ const Skills = styled.div`
   width: 100%;
   margin-top: 2rem;
   h2 {
+    text-shadow: -2px 0 rgba(255, 255, 255, 0.5), 0 2px rgba(255, 255, 255, 0.5), 2px 0 rgba(255, 255, 255, 0.5), 0 -2px rgba(255, 255, 255, 0.5);
+
     margin-top: 1rem;
-    color: var(--accent-color-primary);
+    /* color: var(--accent-color-primary); */
     font-weight: 700;
   }
   li {
+    text-shadow: -1px 0 rgba(255, 255, 255, 0.5), 0 1px rgba(255, 255, 255, 0.5), 1px 0 rgba(255, 255, 255, 0.5), 0 -1px rgba(255, 255, 255, 0.5);
+
     list-style-type: none;
-    color: var(--accent-color-secondary);
+    /* color: var(--accent-color-secondary); */
     font-weight: 700;
     margin-top: 1rem;
   }
   svg {
-    color: var(--accent-color-primary);
+    /* color: var(--accent-color-primary); */
     font-size: 4rem;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
     -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));

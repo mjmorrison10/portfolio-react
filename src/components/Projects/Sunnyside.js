@@ -12,16 +12,16 @@ function Sunnyside() {
   return (
     <Projectwrapper>
       <ProjectInfo>
-        <Typography variant="h2">sunnyside agency landing page</Typography>
-        <Typography variant="h3" color="primary">
+        <Typography variant="h2" color="primary">sunnyside agency landing page</Typography>
+        <Typography variant="h3" color="secondary">
           web
         </Typography>
         <IconsWrapper>
-          <ComputerOutlined color="primary" />
-          <MobileScreenShareRounded color="primary" />
-          <LanguageRounded color="primary" />
+          <ComputerOutlined color="secondary" />
+          <MobileScreenShareRounded color="secondary" />
+          <LanguageRounded color="secondary" />
         </IconsWrapper>
-        <Typography>
+        <Typography color="secondary">
           This challenge will be a perfect test of your layout and responsive
           skills. There's a tiny bit of JS for the mobile menu, but the focus is
           HTML and CSS.
@@ -64,7 +64,7 @@ const ProjectInfo = styled.div`
     text-transform: capitalize;
     font-size: 2em;
     font-weight: 700;
-    color: var(--accent-color-dark);
+    /* color: var(--accent-color-dark); */
     margin-bottom: 0.5em;
   }
   h3 {
@@ -77,7 +77,7 @@ const ProjectInfo = styled.div`
   p {
     align-self: center;
     font-size: 1.5em;
-    color: var(--accent-color-secondary);
+    /* color: var(--accent-color-secondary); */
     margin-bottom: 0.5em;
     font-weight: 500;
     width: 75%;

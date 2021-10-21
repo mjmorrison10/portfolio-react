@@ -12,16 +12,16 @@ function Thdistributors() {
   return (
     <Projectwrapper>
       <ProjectInfo>
-        <Typography variant="h2">total home distributors</Typography>
-        <Typography variant="h3" color="primary">
+        <Typography variant="h2" color="primary">total home distributors</Typography>
+        <Typography variant="h3" color="secondary">
           web
         </Typography>
         <IconsWrapper>
-          <ComputerOutlined color="primary" />
-          <MobileScreenShareRounded color="primary" />
-          <LanguageRounded color="primary" />
+          <ComputerOutlined color="secondary" />
+          <MobileScreenShareRounded color="secondary" />
+          <LanguageRounded color="secondary" />
         </IconsWrapper>
-        <Typography>
+        <Typography color="secondary">
           A clone landing page using HTML, CSS, and JavaScript. 
         </Typography>
         <Button
@@ -61,7 +61,7 @@ const ProjectInfo = styled.div`
     text-transform: capitalize;
     font-size: 2em;
     font-weight: 700;
-    color: var(--accent-color-dark);
+    /* color: var(--accent-color-dark); */
     margin-bottom: 0.5em;
   }
   h3 {
@@ -74,7 +74,7 @@ const ProjectInfo = styled.div`
   p {
     align-self: center;
     font-size: 1.5em;
-    color: var(--accent-color-secondary);
+    /* color: var(--accent-color-secondary); */
     margin-bottom: 0.5em;
     font-weight: 500;
     width: 75%;

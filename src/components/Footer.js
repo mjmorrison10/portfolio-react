@@ -1,16 +1,22 @@
+import { Typography } from "@material-ui/core";
 import React from "react";
 import styled from "styled-components";
 
 function Footer() {
   return (
     <Container>
-      <Logo>MM</Logo>
-      <Name>
-        Copyright &copy; {new Date().getFullYear()} | Michael Morrison
+      <Logo>
+        <Typography color="primary">MM</Typography>
+      </Logo>
+      <Name color="secondary">
+        <Typography color="secondary">
+          Copyright &copy; {new Date().getFullYear()} | Michael Morrison
+        </Typography>
       </Name>
     </Container>
   );
 }
+// fdd
 
 export default Footer;
 
@@ -21,7 +27,10 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  color: var(--accent-color-primary);
+  /* color: var(--accent-color-primary); */
+  p {
+    font-weight: 900;
+  }
 `;
 
 const Logo = styled.div`

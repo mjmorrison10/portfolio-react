@@ -12,16 +12,16 @@ function CMC() {
   return (
     <Projectwrapper>
       <ProjectInfo>
-        <Typography variant="h2">California Motorcycle Community</Typography>
-        <Typography variant="h3" color="primary">
+        <Typography variant="h2" color="primary">California Motorcycle Community</Typography>
+        <Typography variant="h3" color="secondary">
           web
         </Typography>
         <IconsWrapper>
-          <ComputerOutlined color="primary" />
-          <MobileScreenShareRounded color="primary" />
-          <LanguageRounded color="primary" />
+          <ComputerOutlined color="secondary" />
+          <MobileScreenShareRounded color="secondary" />
+          <LanguageRounded color="secondary" />
         </IconsWrapper>
-        <Typography>
+        <Typography color="secondary">
           Completely custom made website using Tailwind CSS and JavaScript for a
           motorcycle community group.
         </Typography>
@@ -65,7 +65,7 @@ const ProjectInfo = styled.div`
     text-transform: capitalize;
     font-size: 2em;
     font-weight: 700;
-    color: var(--accent-color-dark);
+    /* color: var(--accent-color-dark); */
     margin-bottom: 0.5em;
   }
   h3 {
@@ -78,7 +78,7 @@ const ProjectInfo = styled.div`
   p {
     align-self: center;
     font-size: 1.5em;
-    color: var(--accent-color-secondary);
+    /* color: var(--accent-color-secondary); */
     margin-bottom: 0.5em;
     font-weight: 500;
     width: 75%;

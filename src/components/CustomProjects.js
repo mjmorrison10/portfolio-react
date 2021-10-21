@@ -41,6 +41,7 @@ function CustomProjects() {
 export default CustomProjects;
 
 const Container = styled(Slider)`
+  background-color: rgba(0, 0, 0, 0.7);
   padding-top: 3rem;
   ul li button {
     &:before {
