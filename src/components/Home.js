@@ -10,48 +10,81 @@ import {
   Instagram,
   LinkedIn,
 } from "@material-ui/icons";
+import { Link } from "react-scroll";
 
 function Home() {
   return (
-    <Container id="home" >
+    <Container id="home">
       <Typography variant="h2" component="h1" color="primary">
         Hello, I am Michael Morrison. I
       </Typography>
+
       <Typography color="secondary">
         ...am a dedicated Web Developer. love creating with code!
       </Typography>
-      <Typography color="secondary">...also teach web development to people.</Typography>
-      <Typography color="secondary">...enjoy solving problems and debugging!</Typography>
-      <Typography color="secondary">...am dedicated to learning as much as possible!</Typography>
-      <SocialMedia>
+      <Typography color="secondary">
+        ...also teach web development to people.
+      </Typography>
+      <Typography color="secondary">
+        ...enjoy solving problems and debugging!
+      </Typography>
+      <Typography color="secondary">
+        ...am dedicated to learning as much as possible!
+      </Typography>
 
-        <Facebook color='primary' fontSize="large" onClick={() => window.open('https://bit.ly/facebook-mjm', '_blank')} />
-        
-        <Instagram color='primary' fontSize="large" onClick={() => window.open('https://bit.ly/instagram-mjm', '_blank')} />
-        
-        <GitHub color='primary' fontSize="large" onClick={() => window.open('https://bit.ly/github-mjm', '_blank')} />
-        
-        <LinkedIn color='primary' fontSize="large" onClick={() => window.open('https://bit.ly/linkedin-mjm', '_blank')} />
-        
-        <Email color='primary' fontSize="large" onClick={() => window.open('mailto:mjmorrison10@outlook.com', '_blank')} />
-      
+      <SocialMedia>
+        <Facebook
+          color="primary"
+          mater
+          fontSize="large"
+          onClick={() => window.open("https://bit.ly/facebook-mjm", "_blank")}
+        />
+
+        <Instagram
+          color="primary"
+          fontSize="large"
+          onClick={() => window.open("https://bit.ly/instagram-mjm", "_blank")}
+        />
+
+        <GitHub
+          color="primary"
+          fontSize="large"
+          onClick={() => window.open("https://bit.ly/github-mjm", "_blank")}
+        />
+
+        <LinkedIn
+          color="primary"
+          fontSize="large"
+          onClick={() => window.open("https://bit.ly/linkedin-mjm", "_blank")}
+        />
+
+        <Email
+          color="primary"
+          fontSize="large"
+          onClick={() =>
+            window.open("mailto:mjmorrison10@outlook.com", "_blank")
+          }
+        />
       </SocialMedia>
       <BottomWrapper>
         <ExpandMoreWrapper>
-          <ExpandMore color="primary"/>
+          <Link to="experience" smooth={true}>
+            <ExpandMore color="primary" />
+          </Link>
         </ExpandMoreWrapper>
       </BottomWrapper>
     </Container>
   );
 }
 
-
 export default Home;
 
 const Container = styled.div`
-  background-image: url(${bgChristmas1});
   height: 100vh;
   width: 100%;
+  /* fdsfsddsdfdsdsfds */
+  background-color: rgb(255, 255, 255);
+  background-image: url(${bgChristmas1});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: cover;
@@ -61,22 +94,30 @@ const Container = styled.div`
   justify-content: center;
   color: var(--bgcolor-secondary);
   h1 {
-    text-shadow: -2px 0 rgba(255, 255, 255, 0.5), 0 2px rgba(255, 255, 255, 0.5), 2px 0 rgba(255, 255, 255, 0.5), 0 -2px rgba(255, 255, 255, 0.5);
-
+    border-radius: var(--border-radius);
+    padding: 0 0.2em;
+    /* text-shadow: -2px 0 rgba(255, 255, 255, 0.5), 0 2px rgba(255, 255, 255, 0.5), 2px 0 rgba(255, 255, 255, 0.5), 0 -2px rgba(255, 255, 255, 0.5); */
+    /* text-shadow: 0em 0em 0.25em rgba(255, 255, 255, 0.75); */
+    /* -webkit-text-stroke: 20px white; */
     margin-top: 8rem;
     font-weight: 900;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: var(--accent-color-primary);
     transition: 250ms ease-in-out;
+    /* text-shadow: -1.5px 0 rgba(255, 255, 255, 0.5),
+      0 1.5px rgba(255, 255, 255, 0.5), 1.5px 0 rgba(255, 255, 255, 0.5),
+      0 -1.5px rgba(255, 255, 255, 0.5); */
     &:hover {
       -webkit-text-stroke-color: var(--accent-color-secondary);
     }
   }
   p {
-    text-shadow: -1.5px 0 rgba(255, 255, 255, 0.5), 0 1.5px rgba(255, 255, 255, 0.5), 1.5px 0 rgba(255, 255, 255, 0.5), 0 -1.5px rgba(255, 255, 255, 0.5);
-
+    /* 1515 */
+    /* text-shadow: -2px 0 rgba(255, 255, 255, 0.7), 0 2px rgba(255, 255, 255, 0.7),
+      2px 0 rgba(255, 255, 255, 0.7), 0 -2px rgba(255, 255, 255, 0.7);
+    letter-spacing: 2.5px; */
     font-size: 1.8rem;
-    font-weight: 700;
+    /* font-weight: 700; */
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: var(--accent-color-primary);
     width: 75%;
