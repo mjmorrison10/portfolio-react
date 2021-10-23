@@ -1,6 +1,7 @@
 import { Typography } from "@material-ui/core";
 import { Computer, ExpandMore, Star, Storage, Sync } from "@material-ui/icons";
 import React from "react";
+import { Link } from "react-scroll";
 import styled from "styled-components";
 import Background from "../assets/images/bg-orange-1.jpg";
 
@@ -20,18 +21,18 @@ function Experience() {
             Front-end
           </Typography>
           <Typography color="secondary">
-          <ol>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Bootstrap</li>
-            <li>Tailwind CSS</li>
-            <li>JavaScript</li>
-            <li>React JS</li>
-          </ol>
+            <ol>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>Tailwind CSS</li>
+              <li>JavaScript</li>
+              <li>React JS</li>
+            </ol>
           </Typography>
           <SyncWrapper>
             <SyncWrap>
-              <Sync color="primary"/>
+              <Sync color="primary" />
             </SyncWrap>
           </SyncWrapper>
         </Frontend>
@@ -53,7 +54,7 @@ function Experience() {
           </SyncWrapper>
         </Backend>
         <Tools>
-          <Star color="primary"/>
+          <Star color="primary" />
           <Typography variant="h3" component="h2" color="secondary">
             Tools
           </Typography>
@@ -73,7 +74,9 @@ function Experience() {
       </Skills>
       <BottomWrapper>
         <ExpandMoreWrapper>
-          <ExpandMore color="primary"/>
+          <Link to="projects" smooth={true}>
+            <ExpandMore color="primary" />
+          </Link>
         </ExpandMoreWrapper>
       </BottomWrapper>
     </Container>
@@ -110,20 +113,23 @@ const Skills = styled.div`
   width: 100%;
   margin-top: 2rem;
   h2 {
-    text-shadow: -2px 0 rgba(255, 255, 255, 0.5), 0 2px rgba(255, 255, 255, 0.5), 2px 0 rgba(255, 255, 255, 0.5), 0 -2px rgba(255, 255, 255, 0.5);
+    /* text-shadow: -2px 0 rgba(255, 255, 255, 0.5), 0 2px rgba(255, 255, 255, 0.5),
+      2px 0 rgba(255, 255, 255, 0.5), 0 -2px rgba(255, 255, 255, 0.5); */
 
     margin-top: 1rem;
     /* color: var(--accent-color-primary); */
-    font-weight: 700;
+    /* font-weight: 700; */
   }
   li {
-    text-shadow: -1px 0 rgba(255, 255, 255, 0.5), 0 1px rgba(255, 255, 255, 0.5), 1px 0 rgba(255, 255, 255, 0.5), 0 -1px rgba(255, 255, 255, 0.5);
+    /* text-shadow: -1px 0 rgba(255, 255, 255, 0.5), 0 1px rgba(255, 255, 255, 0.5),
+      1px 0 rgba(255, 255, 255, 0.5), 0 -1px rgba(255, 255, 255, 0.5); */
 
     list-style-type: none;
     /* color: var(--accent-color-secondary); */
-    font-weight: 700;
+    /* font-weight: 700; */
     margin-top: 1rem;
   }
+  /* 4545651 */
   svg {
     /* color: var(--accent-color-primary); */
     font-size: 4rem;

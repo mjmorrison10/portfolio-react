@@ -20,7 +20,7 @@ function CustomProjects() {
     speed: 250,
     slidesToShow: 1,
     SlidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
   };
 
@@ -37,6 +37,8 @@ function CustomProjects() {
     </Container>
   );
 }
+
+// f455dsafdsfdsafddsdssi1515klkll;lllmjuuuujjnn151nnnnnnnasfddss4dsf115juiiidsds4dsdiiids5555550202ds5555555555555dsfdsdsfsfdsfdsfdsfdsdsadsfdsaasddsasadsdsfdsafddsasjhjjhhhkiju88u8888888888888mujytyyttyyfffftrrrtftyftfdiiukiuuukyuuyyuyuythhnhhyhhhhhnvhcfdsdfnnnjhjttythhghbhhhiiiiyjhhjhjmjhjhjhjhjjmjjiuiikjjkdasfdsfdsjhujjjhhjhhkkkjmnnjjjjhnhg564ds5648ds45465kjjjjjjjookkkkkkdsafa5fdafds45dsfdfdsd645fdsa 10:08 before?
 
 export default CustomProjects;
 

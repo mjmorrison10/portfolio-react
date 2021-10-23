@@ -54,6 +54,9 @@ const Container = styled.div`
     -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
     margin-bottom: 1rem;
   }
+  p {
+    font-weight: 900;
+  }
 `;
 
 const BottomWrapper = styled.div`

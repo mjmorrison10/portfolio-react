@@ -1,9 +1,9 @@
 import { Button, Typography } from "@material-ui/core";
-import { ExpandMore } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 import Background from "../assets/images/bg-orange-4.jpg";
 import Footer from "./Footer";
+import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
@@ -16,7 +16,9 @@ function Contact() {
           <Typography variant="p" component="h3" color="primary">
             I'm available for work!
           </Typography>
+          
         </TextWrapper>
+        <ContactForm />
         <Button
           variant="contained"
           color="secondary"
@@ -34,6 +36,7 @@ function Contact() {
   );
 }
 
+
 export default Contact;
 
 const Container = styled.div`
@@ -50,19 +53,20 @@ const Container = styled.div`
   padding-top: 4rem;
 `;
 
+
 const TextWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   h1 {
-    text-shadow: -2px 0 rgba(0, 0, 0, 0.5), 0 2px rgba(0, 0, 0, 0.5), 2px 0 rgba(0, 0, 0, 0.5), 0 -2px rgba(0, 0, 0, 0.5);
+    /* text-shadow: -2px 0 rgba(0, 0, 0, 0.5), 0 2px rgba(0, 0, 0, 0.5), 2px 0 rgba(0, 0, 0, 0.5), 0 -2px rgba(0, 0, 0, 0.5); */
     
-    font-weight: 900;
+    /* font-weight: 900; */
   }
   h3 {
-    text-shadow: -2px 0 rgba(0, 0, 0, 0.5), 0 2px rgba(0, 0, 0, 0.5), 2px 0 rgba(0, 0, 0, 0.5), 0 -2px rgba(0, 0, 0, 0.5);
-    font-weight: 700;
+    /* text-shadow: -2px 0 rgba(0, 0, 0, 0.5), 0 2px rgba(0, 0, 0, 0.5), 2px 0 rgba(0, 0, 0, 0.5), 0 -2px rgba(0, 0, 0, 0.5); */
+    /* font-weight: 700; */
   }
 `;
 
