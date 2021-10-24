@@ -40,7 +40,7 @@ function Education() {
 export default Education;
 
 const Container = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-image: url(${Background});
   background-repeat: no-repeat, no-repeat;
@@ -63,6 +63,18 @@ const Container = styled.div`
     text-align: center;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
   -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+  }
+  @media (max-width: 816px) {
+    padding-top: 6rem;
+  }
+  @media (max-width: 432px) {
+    padding-top: 9rem;
+  }
+  @media (max-width: 291px) {
+    padding-top: 12rem;
+  }
+  @media (max-width: 282px) {
+    padding-top: 15rem;
   }
 `;
 

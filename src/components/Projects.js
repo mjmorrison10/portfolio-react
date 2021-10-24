@@ -7,7 +7,7 @@ import CustomProjects from "./CustomProjects";
 
 function Projects() {
   return (
-    <Container id="projects"  >
+    <Container id="projects">
       <Typography variant="h2" component="h1" color="primary">
         Projects
       </Typography>
@@ -27,9 +27,8 @@ function Projects() {
 export default Projects;
 
 const Container = styled.div`
-  background-color: blue;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-image: url(${Background});
   background-repeat: no-repeat, no-repeat;
@@ -53,18 +52,31 @@ const Container = styled.div`
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
     -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
     margin-bottom: 1rem;
+    font-size: 1.25em;
   }
   p {
     font-weight: 900;
   }
+  @media (max-width: 816px) {
+    padding-top: 6rem;
+  }
+  @media (max-width: 432px) {
+    padding-top: 9rem;
+  }
+  @media (max-width: 291px) {
+    padding-top: 12rem;
+  }
+  @media (max-width: 282px) {
+    padding-top: 15rem;
+  }
 `;
 
 const BottomWrapper = styled.div`
-  /* flex-grow: 1; */
+  flex-grow: 1;
   float: bottom;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: flex-end; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   /* height: auto; */
   background-color: blue;
 `;

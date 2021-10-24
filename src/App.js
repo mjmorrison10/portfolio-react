@@ -26,7 +26,6 @@ function App() {
   );
 }
 
-// ds
 
 
 export default App;
