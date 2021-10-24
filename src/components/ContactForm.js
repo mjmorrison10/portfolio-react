@@ -187,6 +187,6 @@ const Container = styled.div`
   h3,
   p {
     text-shadow: -1px 0 rgba(255, 255, 255, 0.9), 0 1px rgba(255, 255, 255, 0.9),
-      1px 0 rgba(255, 255, 255, 0.9), 0 -1px rgba(255, 255, 255, 0.9);
+      1px 0 rgba(255, 255, 255, 0.9), 0 -1px rgba(255, 255, 255, 0.9)!important;
   }
 `;
