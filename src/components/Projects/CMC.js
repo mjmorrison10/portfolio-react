@@ -84,7 +84,7 @@ const ProjectInfo = styled.div`
     /* color: var(--accent-color-secondary); */
     margin-bottom: 0.5em;
     font-weight: 500;
-    width: 75%;
+    max-width: 45ch;
   }
   a {
     align-self: flex-end;
