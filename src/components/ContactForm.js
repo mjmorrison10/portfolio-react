@@ -29,6 +29,7 @@ export default function ContactForm() {
     e.target.reset();
   }
 
+
   return (
     <div className="App">
       <Card style={{ maxWidth: 450, margin: "0 auto", padding: "20px 5px" }}>
