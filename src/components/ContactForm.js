@@ -33,11 +33,21 @@ export default function ContactForm() {
     <div className="App">
       <Card style={{ maxWidth: 450, margin: "0 auto", padding: "20px 5px" }}>
         <CardContent>
-          <Typography variant="h3" gutterBottom color="textPrimary">
+          <Typography
+            variant="h3"
+            gutterBottom
+            color="textPrimary"
+            align="center"
+          >
             Contact us
           </Typography>
-          <Typography variant="body2" component="p" color="textSecondary">
-            Fill out the form below and our team will get back to you within 24
+          <Typography
+            variant="body2"
+            align="center"
+            component="p"
+            color="textSecondary"
+          >
+            Fill out the form below and our team will get back to you within 48
             hours!
           </Typography>
           <Formik
@@ -149,9 +159,7 @@ const initialValues = {
   message: "",
 };
 
-// jjlyhfdfsdikyiiiioiiihhhhhhhhyjmmmmmmmmmff
 const onSubmit = (values, props) => {
-  // console.log(values, props);
   alert(JSON.stringify(values), null, 2);
   props.resetForm();
 };

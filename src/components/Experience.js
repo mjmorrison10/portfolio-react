@@ -5,8 +5,6 @@ import { Link } from "react-scroll";
 import styled from "styled-components";
 import Background from "../assets/images/bg-orange-1.jpg";
 
-// fdsdytdsfsfdsdsdsd
-
 function Experience() {
   return (
     <Container id="experience">
@@ -86,7 +84,7 @@ function Experience() {
 export default Experience;
 
 const Container = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-image: url(${Background});
   background-repeat: no-repeat, no-repeat;
@@ -96,45 +94,66 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding-top: 5rem;
   h1 {
-    /* color: var(--accent-color-dark); */
-    margin-top: 5rem;
     font-weight: bold;
   }
+  h1,
+  h2,
+  h3,
   p {
-    /* color: var(--accent-color-dark); */
-    font-weight: bolder;
+    text-align: center;
+  }
+  p {
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+  @media (max-width: 816px) {
+    padding-top: 6rem;
+  }
+  @media (max-width: 432px) {
+    padding-top: 9rem;
+  }
+  @media (max-width: 291px) {
+    padding-top: 12rem;
+  }
+  @media (max-width: 282px) {
+    padding-top: 15rem;
   }
 `;
 
 const Skills = styled.div`
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   margin-top: 2rem;
   h2 {
-    /* text-shadow: -2px 0 rgba(255, 255, 255, 0.5), 0 2px rgba(255, 255, 255, 0.5),
-      2px 0 rgba(255, 255, 255, 0.5), 0 -2px rgba(255, 255, 255, 0.5); */
-
     margin-top: 1rem;
-    /* color: var(--accent-color-primary); */
-    /* font-weight: 700; */
   }
   li {
-    /* text-shadow: -1px 0 rgba(255, 255, 255, 0.5), 0 1px rgba(255, 255, 255, 0.5),
-      1px 0 rgba(255, 255, 255, 0.5), 0 -1px rgba(255, 255, 255, 0.5); */
-
     list-style-type: none;
-    /* color: var(--accent-color-secondary); */
-    /* font-weight: 700; */
     margin-top: 1rem;
+    /* font-size: 1.5em; */
+    /* font-weight: 900; */
   }
-  /* 4545651 */
   svg {
-    /* color: var(--accent-color-primary); */
     font-size: 4rem;
-    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
-    -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
+    /* filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7)); */
+    /* -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7)); */
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    ol {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      width: 90%;
+      margin: 0 auto;
+    }
+    li {
+      margin: 0 0.5rem;
+    }
   }
 `;
 

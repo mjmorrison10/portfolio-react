@@ -64,17 +64,19 @@ const Container = styled.div`
   align-items: center;
 `;
 
+
 const Nav = styled.button`
   background-color: var(--bgcolor-primary);
   height: auto;
   width: 90%;
   border: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   button {
     text-transform: capitalize;
-    margin: 0.25rem 0;
+    margin: 0.25rem 0.5rem;
   }
 `;

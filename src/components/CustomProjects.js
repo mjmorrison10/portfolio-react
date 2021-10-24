@@ -38,11 +38,13 @@ function CustomProjects() {
   );
 }
 
-// f455dsafdsfdsafddsdssi1515klkll;lllmjuuuujjnn151nnnnnnnasfddss4dsf115juiiidsds4dsdiiids5555550202ds5555555555555dsfdsdsfsfdsfdsfdsfdsdsadsfdsaasddsasadsdsfdsafddsasjhjjhhhkiju88u8888888888888mujytyyttyyfffftrrrtftyftfdiiukiuuukyuuyyuyuythhnhhyhhhhhnvhcfdsdfnnnjhjttythhghbhhhiiiiyjhhjhjmjhjhjhjhjjmjjiuiikjjkdasfdsfdsjhujjjhhjhhkkkjmnnjjjjhnhg564ds5648ds45465kjjjjjjjookkkkkkdsafa5fdafds45dsfdfdsd645fdsa 10:08 before?
 
 export default CustomProjects;
 
 const Container = styled(Slider)`
+  overflow-x: hidden;
+  width: 95%;
+  margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.7);
   padding-top: 3rem;
   ul li button {

@@ -12,7 +12,9 @@ function OSRS() {
   return (
     <Projectwrapper>
       <ProjectInfo>
-        <Typography variant="h2" color="primary">Oldschool RuneScape Clone</Typography>
+        <Typography variant="h2" color="primary">
+          Oldschool RuneScape Clone
+        </Typography>
         <Typography variant="h3" color="secondary">
           web
         </Typography>
@@ -49,7 +51,12 @@ const Projectwrapper = styled.div`
   margin-bottom: 1rem;
   -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
+  @media (max-width: 680px) {
+    flex-direction: column;
+  }
 `;
+
+// dsdsdsfdsd
 
 const ProjectInfo = styled.div`
   flex: 1;
@@ -86,6 +93,7 @@ const ProjectInfo = styled.div`
   }
 `;
 
+// fdsfs
 const ProjectImage = styled.div`
   margin-left: 1em;
   flex: 1;
@@ -97,7 +105,12 @@ const ProjectImage = styled.div`
   &:hover {
     transform: scale(1.05);
   }
+  @media (max-width: 680px) {
+    flex: auto;
+    height: 20em;
+  }
 `;
+
 
 const IconsWrapper = styled.div`
   display: flex;

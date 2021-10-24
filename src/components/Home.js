@@ -15,10 +15,9 @@ import { Link } from "react-scroll";
 function Home() {
   return (
     <Container id="home">
-      <Typography variant="h2" component="h1" color="primary">
+      <Typography variant="h2" component="h1" color="primary" align="center">
         Hello, I am Michael Morrison. I
       </Typography>
-
       <Typography color="secondary">
         ...am a dedicated Web Developer. love creating with code!
       </Typography>
@@ -80,9 +79,8 @@ function Home() {
 export default Home;
 
 const Container = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  /* fdsfsddsdfdsdsfds */
   background-color: rgb(255, 255, 255);
   background-image: url(${bgChristmas1});
   background-repeat: no-repeat, no-repeat;
@@ -93,31 +91,20 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   color: var(--bgcolor-secondary);
+  padding-top: 5rem;
   h1 {
     border-radius: var(--border-radius);
     padding: 0 0.2em;
-    /* text-shadow: -2px 0 rgba(255, 255, 255, 0.5), 0 2px rgba(255, 255, 255, 0.5), 2px 0 rgba(255, 255, 255, 0.5), 0 -2px rgba(255, 255, 255, 0.5); */
-    /* text-shadow: 0em 0em 0.25em rgba(255, 255, 255, 0.75); */
-    /* -webkit-text-stroke: 20px white; */
-    margin-top: 8rem;
     font-weight: 900;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: var(--accent-color-primary);
     transition: 250ms ease-in-out;
-    /* text-shadow: -1.5px 0 rgba(255, 255, 255, 0.5),
-      0 1.5px rgba(255, 255, 255, 0.5), 1.5px 0 rgba(255, 255, 255, 0.5),
-      0 -1.5px rgba(255, 255, 255, 0.5); */
     &:hover {
       -webkit-text-stroke-color: var(--accent-color-secondary);
     }
   }
   p {
-    /* 1515 */
-    /* text-shadow: -2px 0 rgba(255, 255, 255, 0.7), 0 2px rgba(255, 255, 255, 0.7),
-      2px 0 rgba(255, 255, 255, 0.7), 0 -2px rgba(255, 255, 255, 0.7);
-    letter-spacing: 2.5px; */
     font-size: 1.8rem;
-    /* font-weight: 700; */
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: var(--accent-color-primary);
     width: 75%;
@@ -127,6 +114,18 @@ const Container = styled.div`
     &:hover {
       -webkit-text-stroke-color: var(--accent-color-secondary);
     }
+  }
+  @media (max-width: 816px) {
+    padding-top: 6rem;
+  }
+  @media (max-width: 432px) {
+    padding-top: 9rem;
+  }
+  @media (max-width: 291px) {
+    padding-top: 12rem;
+  }
+  @media (max-width: 282px) {
+    padding-top: 15rem;
   }
 `;
 

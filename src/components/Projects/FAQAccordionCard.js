@@ -50,6 +50,9 @@ const Projectwrapper = styled.div`
   margin-bottom: 1rem;
   -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
+  @media (max-width: 680px) {
+    flex-direction: column;
+  }
 `;
 
 const ProjectInfo = styled.div`
@@ -97,6 +100,10 @@ const ProjectImage = styled.div`
   transition: 250ms ease-in-out;
   &:hover {
     transform: scale(1.05);
+  }
+  @media (max-width: 680px) {
+    flex: auto;
+    height: 20em;
   }
 `;
 
