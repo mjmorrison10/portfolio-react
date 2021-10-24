@@ -88,7 +88,7 @@ const Container = styled.div`
   width: 100vw;
   background-image: url(${Background});
   background-repeat: no-repeat, no-repeat;
-  background-position: 100% 25%;
+  background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;

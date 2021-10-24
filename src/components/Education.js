@@ -59,7 +59,7 @@ const Container = styled.div`
   p {
     font-weight: 700;
     font-size: 1.5rem;
-    width: 80%;
+    max-width: 60ch;
     text-align: center;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
   -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
@@ -79,7 +79,7 @@ const Container = styled.div`
 `;
 
 const WordCloudWrap = styled.div`
-  height: 100%;
+  height: 50vh;
   width: 100%;
   /* @media (max-width: 1000px) {
     height: auto;

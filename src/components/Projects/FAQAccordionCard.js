@@ -21,7 +21,7 @@ function FAQAccordionCard() {
             <MobileScreenShareRounded color="secondary" />
             <LanguageRounded color="secondary" />
           </IconsWrapper>
-          <Typography color="primary">
+          <Typography color="secondary">
           In this challenge, you'll be building out an FAQ accordion. This is an extremely common front-end pattern, so it's a great opportunity to get some practice in!
           </Typography>
           <Button
@@ -83,7 +83,7 @@ const ProjectInfo = styled.div`
     /* color: var(--accent-color-secondary); */
     margin-bottom: 0.5em;
     font-weight: 500;
-    width: 75%;
+    max-width: 45ch;
   }
   a {
     align-self: flex-end;
@@ -101,7 +101,7 @@ const ProjectImage = styled.div`
   &:hover {
     transform: scale(1.05);
   }
-  @media (max-width: 680px) {
+    @media (max-width: 680px) {
     flex: auto;
     height: 20em;
   }

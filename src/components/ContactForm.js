@@ -186,7 +186,7 @@ const Container = styled.div`
   h2,
   h3,
   p {
-    text-shadow: -0px 0 rgba(0, 0, 0, 0.9), 0 0px rgba(0, 0, 0, 0.9),
-      0px 0 rgba(0, 0, 0, 0.9), 0 -0px rgba(0, 0, 0, 0.9);
+    text-shadow: -1px 0 rgba(255, 255, 255, 0.9), 0 1px rgba(255, 255, 255, 0.9),
+      1px 0 rgba(255, 255, 255, 0.9), 0 -1px rgba(255, 255, 255, 0.9);
   }
 `;
