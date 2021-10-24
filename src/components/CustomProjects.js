@@ -43,7 +43,7 @@ export default CustomProjects;
 
 const Container = styled(Slider)`
   overflow-x: hidden;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.7);
   padding-top: 3rem;
