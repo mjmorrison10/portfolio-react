@@ -10,6 +10,7 @@ import React from "react";
 import { Form, Formik, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import emailjs from "emailjs-com";
+import styled from "styled-components";
 
 export default function ContactForm() {
   function sendEmail(e) {
@@ -29,9 +30,8 @@ export default function ContactForm() {
     e.target.reset();
   }
 
-
   return (
-    <div className="App">
+    <Container className="App">
       <Card style={{ maxWidth: 450, margin: "0 auto", padding: "20px 5px" }}>
         <CardContent>
           <Typography
@@ -146,7 +146,7 @@ export default function ContactForm() {
           </Formik>
         </CardContent>
       </Card>
-    </div>
+    </Container>
   );
 }
 
@@ -180,3 +180,13 @@ const validationSchema = Yup.object().shape({
     .min(50, "Minimum 50 characters")
     .required("Message required"),
 });
+
+const Container = styled.div`
+  h1,
+  h2,
+  h3,
+  p {
+    text-shadow: -0px 0 rgba(0, 0, 0, 0.9), 0 0px rgba(0, 0, 0, 0.9),
+      0px 0 rgba(0, 0, 0, 0.9), 0 -0px rgba(0, 0, 0, 0.9);
+  }
+`;

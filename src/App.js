@@ -26,8 +26,6 @@ function App() {
   );
 }
 
-
-
 export default App;
 
 const Container = styled.div`
@@ -36,9 +34,8 @@ const Container = styled.div`
   h3,
   p,
   svg {
-    text-shadow: -0.75px 0 rgba(255, 255, 255, 0.5),
-    0 0.75px rgba(255, 255, 255, 0.5), 0.75px 0 rgba(255, 255, 255, 0.5),
-    0 -0.75px rgba(255, 255, 255, 0.5);
+    text-shadow: -1px 0 rgba(0, 0, 0, 0.9), 0 1px rgba(0, 0, 0, 0.9),
+      1px 0 rgba(0, 0, 0, 0.9), 0 -1px rgba(0, 0, 0, 0.9);
   }
   h1 {
     font-weight: 900;
@@ -50,13 +47,9 @@ const Container = styled.div`
     font-weight: 700;
   }
   p {
-    text-shadow: -1px 0 rgba(255, 255, 255, 0.5),
-    0 1px rgba(255, 255, 255, 0.5), 1px 0 rgba(255, 255, 255, 0.5),
-    0 -1px rgba(255, 255, 255, 0.5);
     font-weight: 600;
   }
 `;
-
 
 const christmas = createTheme({
   palette: {
@@ -80,11 +73,11 @@ const halloween = createTheme({
   palette: {
     primary: {
       main: orange[700],
-      dark: purple[500],
+      dark: purple[300],
       light: purple[300],
     },
     secondary: {
-      main: purple[700],
+      main: purple[300],
       dark: orange[500],
       light: orange[300],
       contrastText: "#fff",
