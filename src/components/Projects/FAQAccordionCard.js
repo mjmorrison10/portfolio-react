@@ -9,45 +9,43 @@ import styled from "styled-components";
 import FAQImage from "../../assets/images/project2.png";
 
 function FAQAccordionCard() {
-    return (
-        <Projectwrapper>
-        <ProjectInfo>
-          <Typography variant="h2" color="primary">FAQ ACCORDION CARD</Typography>
-          <Typography variant="h3" color="secondary">
-            web
-          </Typography>
-          <IconsWrapper>
-            <ComputerOutlined color="secondary" />
-            <MobileScreenShareRounded color="secondary" />
-            <LanguageRounded color="secondary" />
-          </IconsWrapper>
-          <Typography color="secondary">
-          In this challenge, you'll be building out an FAQ accordion. This is an extremely common front-end pattern, so it's a great opportunity to get some practice in!
-          </Typography>
-          <Button
-            variant="contained"
-            color="primary"
-            href="https://bit.ly/FAQ-accordion-card-mjm"
-          >
-            Visit Website
-          </Button>
-        </ProjectInfo>
-        <ProjectImage />
-      </Projectwrapper>
-    )
+  return (
+    <Projectwrapper>
+      <ProjectInfo>
+        <Typography variant="h2" color="primary">
+          FAQ ACCORDION CARD
+        </Typography>
+        <Typography variant="h3" color="secondary">
+          web
+        </Typography>
+        <IconsWrapper>
+          <ComputerOutlined color="secondary" />
+          <MobileScreenShareRounded color="secondary" />
+          <LanguageRounded color="secondary" />
+        </IconsWrapper>
+        <Typography color="secondary">
+          In this challenge, you'll be building out an FAQ accordion. This is an
+          extremely common front-end pattern, so it's a great opportunity to get
+          some practice in!
+        </Typography>
+        <Button
+          variant="contained"
+          color="primary"
+          href="https://bit.ly/FAQ-accordion-card-mjm"
+        >
+          Visit Website
+        </Button>
+      </ProjectInfo>
+      <ProjectImage />
+    </Projectwrapper>
+  );
 }
 
-
-export default FAQAccordionCard
-
+export default FAQAccordionCard;
 
 const Projectwrapper = styled.div`
-  margin: 0 2rem;
-  padding: 1rem;
   display: flex;
-  /* height: 50vh; */
   border-radius: var(--border-radius);
-  margin-bottom: 1rem;
   -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
   @media (max-width: 680px) {
@@ -91,6 +89,7 @@ const ProjectInfo = styled.div`
 `;
 
 const ProjectImage = styled.div`
+  height: 25em;
   margin-left: 1em;
   flex: 1;
   background-image: url(${FAQImage});
@@ -101,7 +100,7 @@ const ProjectImage = styled.div`
   &:hover {
     transform: scale(1.05);
   }
-    @media (max-width: 680px) {
+  @media (max-width: 680px) {
     flex: auto;
     height: 20em;
   }

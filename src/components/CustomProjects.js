@@ -21,8 +21,11 @@ function CustomProjects() {
     slidesToShow: 1,
     SlidesToScroll: 1,
     autoplay: true,
+    centermode: true,
     autoplaySpeed: 3000,
+    adaptiveHeight: true,
   };
+
 
   return (
     <Container {...settings}>
@@ -38,9 +41,12 @@ function CustomProjects() {
   );
 }
 
+// dsdhgddsdsdsddfdshhnbhgfgbbbbbbbbbbbmgbnfdjdsbhbfbddsdsbhdsa
+
 export default CustomProjects;
 
 const Container = styled(Slider)`
+  padding: 1rem;
   width: 90%;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.7);
@@ -63,4 +69,5 @@ const Container = styled(Slider)`
   }
   @media (max-width: 768px) {
     width: 80%;
+  }
 `;

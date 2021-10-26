@@ -9,44 +9,41 @@ import styled from "styled-components";
 import RPS from "../../assets/images/rockpaperscissors.png";
 
 function RockPaperScissors() {
-    return (
-        <Projectwrapper>
-        <ProjectInfo>
-          <Typography variant="h2" color="primary">rock, paper, scissors</Typography>
-          <Typography variant="h3" color="secondary">
-            web
-          </Typography>
-          <IconsWrapper>
-            <ComputerOutlined color="secondary" />
-            <MobileScreenShareRounded color="secondary" />
-            <LanguageRounded color="secondary" />
-          </IconsWrapper>
-          <Typography color="secondary">
-            Rock, Paper, Scissors game with score-counter using JavaScript.
-          </Typography>
-          <Button
-            variant="contained"
-            color="primary"
-            href="https://bit.ly/mjm-rockpaperscissors"
-          >
-            Visit Website
-          </Button>
-        </ProjectInfo>
-        <ProjectImage />
-      </Projectwrapper>
-    )
+  return (
+    <Projectwrapper>
+      <ProjectInfo>
+        <Typography variant="h2" color="primary">
+          rock, paper, scissors
+        </Typography>
+        <Typography variant="h3" color="secondary">
+          web
+        </Typography>
+        <IconsWrapper>
+          <ComputerOutlined color="secondary" />
+          <MobileScreenShareRounded color="secondary" />
+          <LanguageRounded color="secondary" />
+        </IconsWrapper>
+        <Typography color="secondary">
+          Rock, Paper, Scissors game with score-counter using JavaScript.
+        </Typography>
+        <Button
+          variant="contained"
+          color="primary"
+          href="https://bit.ly/mjm-rockpaperscissors"
+        >
+          Visit Website
+        </Button>
+      </ProjectInfo>
+      <ProjectImage />
+    </Projectwrapper>
+  );
 }
 
-export default RockPaperScissors
-
+export default RockPaperScissors;
 
 const Projectwrapper = styled.div`
-  margin: 0 2rem;
-  padding: 1rem;
   display: flex;
-  /* height: 50vh; */
   border-radius: var(--border-radius);
-  margin-bottom: 1rem;
   -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
   @media (max-width: 680px) {
@@ -90,6 +87,7 @@ const ProjectInfo = styled.div`
 `;
 
 const ProjectImage = styled.div`
+  height: 25em;
   margin-left: 1em;
   flex: 1;
   background-image: url(${RPS});

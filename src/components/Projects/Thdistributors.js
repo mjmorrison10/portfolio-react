@@ -85,6 +85,7 @@ const ProjectInfo = styled.div`
 
 const ProjectImage = styled.div`
   margin-left: 1em;
+  height: 25em;
   flex: 1;
   background-image: url(${THDistributors});
   background-repeat: no-repeat, no-repeat;

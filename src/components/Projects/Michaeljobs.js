@@ -40,12 +40,8 @@ function Michaeljobs() {
 export default Michaeljobs;
 
 const Projectwrapper = styled.div`
-  margin: 0 2rem;
-  padding: 1rem;
   display: flex;
-  /* height: 50vh; */
   border-radius: var(--border-radius);
-  margin-bottom: 1rem;
   -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
   @media (max-width: 680px) {
@@ -90,6 +86,7 @@ const ProjectInfo = styled.div`
 
 const ProjectImage = styled.div`
   margin-left: 1em;
+  height: 25em;
   flex: 1;
   background-image: url(${MichaelJobs});
   background-repeat: no-repeat, no-repeat;
