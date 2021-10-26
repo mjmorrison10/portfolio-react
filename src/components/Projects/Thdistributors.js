@@ -12,7 +12,9 @@ function Thdistributors() {
   return (
     <Projectwrapper>
       <ProjectInfo>
-        <Typography variant="h2" color="primary">total home distributors</Typography>
+        <Typography variant="h2" color="primary">
+          total home distributors
+        </Typography>
         <Typography variant="h3" color="secondary">
           web
         </Typography>
@@ -22,7 +24,7 @@ function Thdistributors() {
           <LanguageRounded color="secondary" />
         </IconsWrapper>
         <Typography color="secondary">
-          A clone landing page using HTML, CSS, and JavaScript. 
+          A clone landing page using HTML, CSS, and JavaScript.
         </Typography>
         <Button
           variant="contained"
@@ -32,7 +34,9 @@ function Thdistributors() {
           Visit Website
         </Button>
       </ProjectInfo>
-      <ProjectImage />
+      <ProjectImage>
+        <img src={THDistributors} alt="thdistributors" />
+      </ProjectImage>
     </Projectwrapper>
   );
 }
@@ -40,18 +44,16 @@ function Thdistributors() {
 export default Thdistributors;
 
 const Projectwrapper = styled.div`
-  margin: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
   padding: 1rem;
-  display: flex;
-  /* height: 50vh; */
   border-radius: var(--border-radius);
-  margin-bottom: 1rem;
   -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
   @media (max-width: 680px) {
     flex-direction: column;
   }
-  
 `;
 
 const ProjectInfo = styled.div`
@@ -89,21 +91,32 @@ const ProjectInfo = styled.div`
 `;
 
 const ProjectImage = styled.div`
-  margin-left: 1em;
   flex: 1;
-  background-image: url(${THDistributors});
-  background-repeat: no-repeat, no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition: 250ms ease-in-out;
-  &:hover {
-    transform: scale(1.05);
-  }
-  @media (max-width: 680px) {
-    flex: auto;
-    height: 20em;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--border-radius);
   }
 `;
+
+// const ProjectImage = styled.div`
+//   margin-left: 1em;
+//   flex: 1;
+//   background-image: url(${THDistributors});
+//   background-repeat: no-repeat, no-repeat;
+//   background-position: center;
+//   background-size: contain;
+//   transition: 250ms ease-in-out;
+//   &:hover {
+//     transform: scale(1.05);
+//   }
+//   @media (max-width: 680px) {
+//     flex: auto;
+//     height: 20em;
+//   }
+// `;
 
 const IconsWrapper = styled.div`
   display: flex;

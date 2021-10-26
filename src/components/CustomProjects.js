@@ -38,15 +38,12 @@ function CustomProjects() {
   );
 }
 
-
 export default CustomProjects;
 
 const Container = styled(Slider)`
-  overflow-x: hidden;
   width: 90%;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.7);
-  padding-top: 3rem;
   ul li button {
     &:before {
       font-size: 10px;
