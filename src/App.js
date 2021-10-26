@@ -29,7 +29,9 @@ function App() {
 
 export default App;
 
+
 const Container = styled.div`
+overflow: hidden;
   h1,
   h2,
   h3,
