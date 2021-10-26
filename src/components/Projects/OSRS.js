@@ -35,7 +35,9 @@ function OSRS() {
           Visit Website
         </Button>
       </ProjectInfo>
-      <ProjectImage />
+      <ProjectImage>
+        <img src={OSRSImage} alt="OSRS" />
+      </ProjectImage>
     </Projectwrapper>
   );
 }
@@ -43,20 +45,18 @@ function OSRS() {
 export default OSRS;
 
 const Projectwrapper = styled.div`
-  margin: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
   padding: 1rem;
-  display: flex;
-  /* height: 50vh; */
   border-radius: var(--border-radius);
-  margin-bottom: 1rem;
   -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
   @media (max-width: 680px) {
+    grid-template-columns: 1fr;
     flex-direction: column;
   }
 `;
-
-// dsdsdsfdsd
 
 const ProjectInfo = styled.div`
   flex: 1;
@@ -93,24 +93,34 @@ const ProjectInfo = styled.div`
   }
 `;
 
-// fdsfs
 const ProjectImage = styled.div`
-  margin-left: 1em;
   flex: 1;
-  background-image: url(${OSRSImage});
-  background-repeat: no-repeat, no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition: 250ms ease-in-out;
-  &:hover {
-    transform: scale(1.05);
-  }
-  @media (max-width: 680px) {
-    flex: auto;
-    height: 20em;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--border-radius);
   }
 `;
 
+// fdsfs
+// const ProjectImage = styled.div`
+//   margin-left: 1em;
+//   flex: 1;
+//   background-image: url(${OSRSImage});
+//   background-repeat: no-repeat, no-repeat;
+//   background-position: center;
+//   background-size: contain;
+//   transition: 250ms ease-in-out;
+//   &:hover {
+//     transform: scale(1.05);
+//   }
+//   @media (max-width: 680px) {
+//     flex: auto;
+//     height: 20em;
+//   }
+// `;
 
 const IconsWrapper = styled.div`
   display: flex;
