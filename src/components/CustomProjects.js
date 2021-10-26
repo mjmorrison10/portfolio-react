@@ -20,8 +20,8 @@ function CustomProjects() {
     speed: 250,
     slidesToShow: 1,
     SlidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 5000,
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
 
   return (
@@ -61,4 +61,6 @@ const Container = styled(Slider)`
   button {
     z-index: 1;
   }
+  @media (max-width: 768px) {
+    width: 80%;
 `;
