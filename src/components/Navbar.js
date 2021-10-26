@@ -64,9 +64,9 @@ const Container = styled.div`
   align-items: center;
 `;
 
-
 const Nav = styled.button`
-  background-color: var(--bgcolor-primary);
+  /* background-color: var(--bgcolor-primary); */
+  background: transparent;
   height: auto;
   width: 90%;
   border: none;

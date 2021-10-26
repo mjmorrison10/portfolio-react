@@ -109,7 +109,7 @@ const Container = styled.div`
     -webkit-text-stroke-color: var(--accent-color-primary);
     width: 75%;
     text-align: center;
-    margin-top: 1rem;
+    padding-top: 1rem;
     transition: 250ms ease-in-out;
     &:hover {
       -webkit-text-stroke-color: var(--accent-color-secondary);

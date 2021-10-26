@@ -32,7 +32,7 @@ const Container = styled.header`
 
 const Wrapper = styled.div`
   border-radius: var(--border-radius);
-  background-color: var(--bgcolor-primary);
+  /* background-color: var(--bgcolor-primary); */
   width: 90%;
   height: auto;
   display: flex;
