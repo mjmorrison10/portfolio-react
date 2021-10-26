@@ -6,7 +6,7 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-import FAQImage from "../../assets/images/project2.png";
+import FAQImage from "../../assets/images/5-faq-accordion-card-main.png";
 
 function FAQAccordionCard() {
   return (

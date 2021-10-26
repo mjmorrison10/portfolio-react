@@ -1,6 +1,7 @@
 import { Typography } from "@material-ui/core";
 import { ExpandMore } from "@material-ui/icons";
 import React from "react";
+import { Link } from "react-scroll";
 import styled from "styled-components";
 import Background from "../assets/images/bg-orange-2.jpg";
 import CustomProjects from "./CustomProjects";
@@ -15,11 +16,13 @@ function Projects() {
         Here are some of my projects!
       </Typography>
       <CustomProjects />
-      {/* <BottomWrapper>
+      <BottomWrapper>
         <ExpandMoreWrapper>
-          <ExpandMore />
+          <Link to="education" smooth={true}>
+            <ExpandMore color="primary" />
+          </Link>
         </ExpandMoreWrapper>
-      </BottomWrapper> */}
+      </BottomWrapper>
     </Container>
   );
 }
@@ -72,21 +75,18 @@ const Container = styled.div`
 `;
 
 const BottomWrapper = styled.div`
-  flex-grow: 1;
-  float: bottom;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
   align-items: flex-end;
-  /* height: auto; */
-  background-color: blue;
+  justify-content: flex-end;
+  flex: 1; */
 `;
 
 const ExpandMoreWrapper = styled.div`
-  position: relative;
+  position: absolute;
   bottom: 0;
+  right: 50%;
   cursor: pointer;
   transition: 250ms ease-in-out;
-  /* color: var(--accent-color-dark); */
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
   -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
   &:hover {

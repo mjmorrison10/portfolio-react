@@ -4,10 +4,11 @@ import React from "react";
 import ReactWordcloud from "react-wordcloud";
 import styled from "styled-components";
 import Background from "../assets/images/bg-orange-3.jpg";
+import { Link } from "react-scroll";
 
 function Education() {
   return (
-    <Container id="education" >
+    <Container id="education">
       <Typography variant="h2" component="h1" color="primary">
         Education
       </Typography>
@@ -30,7 +31,9 @@ function Education() {
 
       <BottomWrapper>
         <ExpandMoreWrapper>
-          <ExpandMore color="primary"/>
+          <Link to="contact" smooth={true}>
+            <ExpandMore color="primary" />
+          </Link>
         </ExpandMoreWrapper>
       </BottomWrapper>
     </Container>
@@ -54,7 +57,7 @@ const Container = styled.div`
   h1 {
     font-weight: bold;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
-  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+    -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
   }
   p {
     font-weight: 700;
@@ -62,7 +65,7 @@ const Container = styled.div`
     max-width: 60ch;
     text-align: center;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
-  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+    -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
   }
   @media (max-width: 816px) {
     padding-top: 6rem;
