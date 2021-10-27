@@ -84,9 +84,9 @@ const Container = styled.div`
 const WordCloudWrap = styled.div`
   height: 50vh;
   width: 100%;
-  /* @media (max-width: 1000px) {
+  @media (max-width: 1000px) {
     height: auto;
-  } */
+  }
 `;
 
 const BottomWrapper = styled.div`
@@ -162,5 +162,14 @@ const words = [
 ];
 
 const options = {
-  fontSizes: [20, 60],
+  fontSizes: [25, 100],
+  // minSize: [100, 500],
+  rotationAngles: [0, 45],
+  rotations: 5,
+  padding: 1,
+  deterministic: false,
+  scale: "sqrt",
+  spiral: "archimedean",
+  enabletooltip: false,
 };
+
