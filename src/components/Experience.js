@@ -91,13 +91,10 @@ const Container = styled.div`
   background-position: center;
   background-size: cover;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
   padding-top: 5rem;
-  h1 {
-    font-weight: bold;
-  }
   h1,
   h2,
   h3,
@@ -126,7 +123,6 @@ const Skills = styled.div`
   display: flex;
   justify-content: space-evenly;
   width: 90%;
-  margin: 0 auto;
   margin-top: 2rem;
   h2 {
     margin-top: 1rem;
@@ -134,24 +130,27 @@ const Skills = styled.div`
   li {
     list-style-type: none;
     margin-top: 1rem;
-    /* font-size: 1.5em; */
-    /* font-weight: 900; */
   }
   svg {
     font-size: 4rem;
     /* filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7)); */
     /* -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7)); */
   }
+  ol {
+    margin: 0px;
+    padding: 0px;
+  }
   @media (max-width: 600px) {
+    align-items: center;
     flex-direction: column;
     ol {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      width: 90%;
-      margin: 0 auto;
     }
     li {
+      display: flex;
+      justify-content: center;
       margin: 0 0.5rem;
     }
   }

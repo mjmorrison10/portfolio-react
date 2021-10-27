@@ -8,7 +8,6 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import { grey, orange, purple } from "@material-ui/core/colors";
 import styled from "styled-components";
-import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -20,11 +19,12 @@ function App() {
         <Projects />
         <Education />
         <Contact />
-        {/* <ContactForm /> */}
       </Container>
     </ThemeProvider>
   );
 }
+
+
 
 export default App;
 
