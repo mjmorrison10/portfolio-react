@@ -24,8 +24,8 @@ function CustomProjects() {
     centermode: true,
     autoplaySpeed: 3000,
     adaptiveHeight: true,
-  };
 
+  };
 
   return (
     <Container {...settings}>
@@ -46,9 +46,6 @@ function CustomProjects() {
 export default CustomProjects;
 
 const Container = styled(Slider)`
-  padding: 1rem;
-  width: 90%;
-  margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.7);
   ul li button {
     &:before {
@@ -66,8 +63,5 @@ const Container = styled(Slider)`
 
   button {
     z-index: 1;
-  }
-  @media (max-width: 768px) {
-    width: 80%;
   }
 `;
