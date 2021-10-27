@@ -122,7 +122,7 @@ export default function ContactForm() {
                       {...props.getFieldProps("message")}
                       multiline
                       rows={4}
-                      placeholder="Type your message here"
+                      placeholder="Type your message here."
                       variant="outlined"
                       fullWidth
                       required

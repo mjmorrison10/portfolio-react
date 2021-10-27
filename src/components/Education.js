@@ -106,6 +106,7 @@ const ExpandMoreWrapper = styled.div`
   }
 `;
 
+
 const words = [
   {
     text: "Programming",
@@ -163,13 +164,11 @@ const words = [
 
 const options = {
   fontSizes: [25, 100],
-  // minSize: [100, 500],
-  rotationAngles: [0, 45],
+  rotationAngles: [0, 25],
   rotations: 5,
-  padding: 1,
-  deterministic: false,
+  padding: 10,
+  deterministic: true,
   scale: "sqrt",
-  spiral: "archimedean",
+  spiral: "archimedesan",
   enabletooltip: false,
 };
-

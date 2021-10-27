@@ -135,11 +135,11 @@ const SocialMedia = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: space-evenly;
-  width: 50%;
+  width: 80%;
   flex: 1;
   color: var(--bgcolor-secondary);
   stroke: var(--accent-color-primary);
-  stroke-width: 1px;
+  stroke-width: 1px solid;
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
   -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
   svg {

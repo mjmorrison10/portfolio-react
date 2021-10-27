@@ -5,17 +5,16 @@ import Background from "../assets/images/bg-orange-4.jpg";
 import Footer from "./Footer";
 import ContactForm from "./ContactForm";
 
-// dfsbbdsfvvvvvvvdssaasabvcfdsdsvvfdfv
 
 function Contact() {
   return (
     <Container id="contact">
       <ContactWrapper>
         <TextWrapper>
-          <Typography variant="h3" component="h1" color="primary">
+          <Typography variant="h3" component="h1" color="primary" gutterBottom>
             Want to work with me?
           </Typography>
-          <Typography variant="p" component="h3" color="primary">
+          <Typography variant="p" component="h3" color="primary" gutterBottom>
             I'm available! Just email me a design, and I'll develop it!
           </Typography>
         </TextWrapper>
@@ -23,6 +22,7 @@ function Contact() {
           variant="contained"
           color="secondary"
           href="mjmorrison10@outlook.com"
+          gutterBottom
           onClick={() =>
             window.open("mailto:mjmorrison10@outlook.com", "_blank")
           }
@@ -48,7 +48,7 @@ const Container = styled.div`
   width: 100vw;
   background-image: url(${Background});
   background-repeat: no-repeat, no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -102,4 +102,5 @@ const ContactWrapper = styled.div`
 
 const ContactFormWrapper = styled.div`
   padding-top: 1rem;
+  margin-bottom: 1rem;
 `;
