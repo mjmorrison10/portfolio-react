@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import bgChristmas1 from "../assets/images/bg-october-2.jpg";
+import Background from "../assets/images/bg-thanksgivings-4.jpg";
 import { Typography } from "@material-ui/core";
 import {
   Email,
@@ -11,6 +11,7 @@ import {
   LinkedIn,
 } from "@material-ui/icons";
 import { Link } from "react-scroll";
+
 
 
 
@@ -84,7 +85,7 @@ const Container = styled.div`
   min-height: 100vh;
   width: 100%;
   background-color: rgb(255, 255, 255);
-  background-image: url(${bgChristmas1});
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(${Background});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: cover;

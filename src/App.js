@@ -11,7 +11,7 @@ import styled from "styled-components";
 
 function App() {
   return (
-    <ThemeProvider theme={halloween}>
+    <ThemeProvider theme={thanksgivings}>
       <Container>
         <Header />
         <Home />
@@ -67,7 +67,6 @@ const christmas = createTheme({
   },
 });
 
-// dds dsfsdfdsdygsfsdsaffdsdsfsfdsafddadadsafdsfsfsdsfdsfdsafdsfdsfdsafddsdfdsfdsfdsfddfdsafd45jfdsdfhjjjghmmnjjmmmmmmmmmnmmnmmmhhhgsfgd45mbbbnbnvbdgjjjjhh1jkjjhjjj20hggsbbjjhnhmhnmmnnnnmnhhnnhjhmdsfadsffdsafd45sds45564564564afdsafdssfdsfdafdsafdfdsfadsfds
 
 const halloween = createTheme({
   palette: {
@@ -87,3 +86,25 @@ const halloween = createTheme({
     },
   },
 });
+
+const thanksgivings = createTheme({
+  palette: {
+    primary: {
+      main: "#ED732E",
+      // main: orange[700],
+      // dark: purple[300],
+      // light: purple[300],
+    },
+    secondary: {
+      main: "#F8B12C",
+      // main: purple[300],
+      // dark: orange[500],
+      // light: orange[300],
+      // contrastText: "#fff",
+    },
+    success: {
+      main: grey[700],
+    },
+  },
+});
+

@@ -1,7 +1,7 @@
 import { Button, Typography } from "@material-ui/core";
 import React from "react";
 import styled from "styled-components";
-import Background from "../assets/images/bg-orange-4.jpg";
+import Background from "../assets/images/bg-thanksgivings-3.jpg";
 import Footer from "./Footer";
 import ContactForm from "./ContactForm";
 
@@ -46,7 +46,7 @@ export default Contact;
 const Container = styled.div`
   min-height: 100vh;
   width: 100vw;
-  background-image: url(${Background});
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(${Background});
   background-repeat: no-repeat, no-repeat;
   background-position: right;
   background-size: cover;
