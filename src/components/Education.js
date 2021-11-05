@@ -3,8 +3,11 @@ import { ExpandMore } from "@material-ui/icons";
 import React from "react";
 import ReactWordcloud from "react-wordcloud";
 import styled from "styled-components";
-import Background from "../assets/images/bg-thanksgivings-1.jpg";
+import Background from "../assets/images/bg-thanksgivings-2.jpg";
 import { Link } from "react-scroll";
+
+
+//fdds dds
 
 function Education() {
   return (

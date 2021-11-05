@@ -24,7 +24,6 @@ function App() {
   );
 }
 
-
 export default App;
 
 const Container = styled.div`
@@ -51,6 +50,7 @@ const Container = styled.div`
   }
 `;
 
+
 const christmas = createTheme({
   palette: {
     primary: {
@@ -66,7 +66,6 @@ const christmas = createTheme({
     },
   },
 });
-
 
 const halloween = createTheme({
   palette: {
@@ -107,4 +106,3 @@ const thanksgivings = createTheme({
     },
   },
 });
-

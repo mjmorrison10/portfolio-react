@@ -12,6 +12,7 @@ import OSRS from "./Projects/OSRS";
 import TicTacToe from "./Projects/TicTacToe";
 import FAQAccordionCard from "./Projects/FAQAccordionCard";
 import Sunnyside from "./Projects/Sunnyside";
+import Blogr from "./Projects/Blogr";
 
 function CustomProjects() {
   let settings = {
@@ -29,6 +30,7 @@ function CustomProjects() {
 
   return (
     <Container {...settings}>
+      <Blogr />
       <Michaeljobs />
       <RockPaperScissors />
       <TicTacToe />
@@ -41,7 +43,6 @@ function CustomProjects() {
   );
 }
 
-// dsdhgddsdsdsddfdshhnbhgfgbbbbbbbbbbbmgbnfdjdsbhbfbddsdsbhdsa
 
 export default CustomProjects;
 

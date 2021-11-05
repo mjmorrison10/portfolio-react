@@ -3,7 +3,7 @@ import { Computer, ExpandMore, Star, Storage, Sync } from "@material-ui/icons";
 import React from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
-import Background from "../assets/images/bg-thanksgivings-1.jpg";
+import Background from "../assets/images/bg-thanksgivings-7.jpg";
 
 
 function Experience() {
