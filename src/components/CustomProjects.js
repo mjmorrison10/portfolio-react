@@ -13,6 +13,7 @@ import TicTacToe from "./Projects/TicTacToe";
 import FAQAccordionCard from "./Projects/FAQAccordionCard";
 import Sunnyside from "./Projects/Sunnyside";
 import Blogr from "./Projects/Blogr";
+import Loopstudios from "./Projects/Loopstudios";
 
 function CustomProjects() {
   let settings = {
@@ -30,7 +31,9 @@ function CustomProjects() {
 
   return (
     <Container {...settings}>
+
       <Blogr />
+      <Loopstudios />
       <Michaeljobs />
       <RockPaperScissors />
       <TicTacToe />
