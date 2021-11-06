@@ -90,7 +90,7 @@ const ProjectInfo = styled.div`
 
 const ProjectImage = styled.div`
   margin-left: 1em;
-  height: 25em;
+  height: 40em;
   flex: 1;
   background-image: url(${LoopstudiosImage});
   background-repeat: no-repeat, no-repeat;

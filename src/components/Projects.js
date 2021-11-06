@@ -30,6 +30,7 @@ function Projects() {
 export default Projects;
 
 const Container = styled.div`
+padding-bottom: 15rem;
   position: relative;
   min-height: 100vh;
   width: 100vw;

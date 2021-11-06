@@ -90,7 +90,8 @@ const ProjectInfo = styled.div`
 `;
 
 const ProjectImage = styled.div`
-  height: 25em;
+  /* height: 25em; */
+  height: 40em;
   margin-left: 1em;
   flex: 1;
   background-image: url(${CMCImage});
