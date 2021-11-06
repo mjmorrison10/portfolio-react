@@ -31,7 +31,7 @@ function Loopstudios() {
         <Button
           variant="contained"
           color="primary"
-          href="https://bit.ly/fem-20-mjm"
+          href="https://bit.ly/fem-20-mjm-site"
         >
           Visit Website
         </Button>
