@@ -30,11 +30,12 @@ function Projects() {
 export default Projects;
 
 const Container = styled.div`
-padding-bottom: 15rem;
+  padding-bottom: 15rem;
   position: relative;
   min-height: 100vh;
   width: 100vw;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(${Background});
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(${Background});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: cover;
