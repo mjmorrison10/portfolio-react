@@ -61,6 +61,7 @@ function Home() {
         <Email
           color="primary"
           fontSize="large"
+          
           onClick={() =>
             window.open("mailto:mjmorrison10@outlook.com", "_blank")
           }

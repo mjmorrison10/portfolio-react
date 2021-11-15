@@ -32,9 +32,9 @@ const Container = styled.div`
   h2,
   h3,
   p,
-  svg {
-    text-shadow: -1px 0 rgba(0, 0, 0, 0.9), 0 1px rgba(0, 0, 0, 0.9),
-      1px 0 rgba(0, 0, 0, 0.9), 0 -1px rgba(0, 0, 0, 0.9);
+  svg, {
+    text-shadow: -1px 0 2.5px rgba(0, 0, 0, 1), 0 1px 2.5px rgba(0, 0, 0, 1),
+      1px 0 2.5px rgba(0, 0, 0, 1), 0 -1px 2.5px rgba(0, 0, 0, 1);
   }
   h1 {
     font-weight: 900;

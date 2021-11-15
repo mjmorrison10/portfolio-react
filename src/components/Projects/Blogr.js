@@ -31,7 +31,7 @@ function Blogr() {
         <Button
           variant="contained"
           color="primary"
-          href="https://bit.ly/fem-17-mjm"
+          href="https://bit.ly/fem-17-mjm-site"
         >
           Visit Website
         </Button>
