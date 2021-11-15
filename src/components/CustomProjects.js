@@ -15,6 +15,7 @@ import Sunnyside from "./Projects/Sunnyside";
 import Blogr from "./Projects/Blogr";
 import Loopstudios from "./Projects/Loopstudios";
 import TipCalculator from "./Projects/TipCalculator";
+import Crowdfunding from "./Projects/Crowdfunding";
 
 function CustomProjects() {
   let settings = {
@@ -44,6 +45,7 @@ function CustomProjects() {
       <OSRS />
       <Sunnyside />
       <TipCalculator />
+      <Crowdfunding />
     </Container>
   );
 }

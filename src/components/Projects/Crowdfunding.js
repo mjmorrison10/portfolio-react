@@ -6,14 +6,14 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-import SunnysideImage from "../../assets/images/sunnyside.png";
+import BackgroundImage from "../../assets/images/fem-18-crowdfund-landing-product-page.jpg";
 
-function Sunnyside() {
+function Crowdfunding() {
   return (
     <Projectwrapper>
       <ProjectInfo>
         <Typography variant="h2" color="primary">
-          sunnyside agency landing page
+          Crowdfunding Product Page
         </Typography>
         <Typography variant="h3" color="secondary">
           web
@@ -24,14 +24,13 @@ function Sunnyside() {
           <LanguageRounded color="secondary" />
         </IconsWrapper>
         <Typography color="secondary">
-          This challenge will be a perfect test of your layout and responsive
-          skills. There's a tiny bit of JS for the mobile menu, but the focus is
-          HTML and CSS.
+          This challenge will test both your layout and state management skills.
+          As visitors make pledges, your goal is to keep track of the changes.
         </Typography>
         <Button
           variant="contained"
           color="primary"
-          href="https://bit.ly/fem-16-mjm-site"
+          href="https://bit.ly/fem-18-mjm-site"
         >
           Visit Website
         </Button>
@@ -41,7 +40,7 @@ function Sunnyside() {
   );
 }
 
-export default Sunnyside;
+export default Crowdfunding;
 
 const Projectwrapper = styled.div`
   display: flex;
@@ -93,7 +92,7 @@ const ProjectImage = styled.div`
   height: 40em;
   margin-left: 1em;
   flex: 1;
-  background-image: url(${SunnysideImage});
+  background-image: url(${BackgroundImage});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: contain;
