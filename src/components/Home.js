@@ -12,9 +12,6 @@ import {
 } from "@material-ui/icons";
 import { Link } from "react-scroll";
 
-
-
-
 function Home() {
   return (
     <Container id="home">
@@ -33,6 +30,7 @@ function Home() {
       <Typography color="secondary">
         ...am dedicated to learning as much as possible!
       </Typography>
+      
 
       <SocialMedia>
         <Facebook

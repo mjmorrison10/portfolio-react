@@ -76,6 +76,7 @@ const Container = styled.div`
   }
 `;
 
+
 const BottomWrapper = styled.div`
   /* display: flex;
   align-items: flex-end;

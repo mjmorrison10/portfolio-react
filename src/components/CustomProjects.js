@@ -14,6 +14,7 @@ import FAQAccordionCard from "./Projects/FAQAccordionCard";
 import Sunnyside from "./Projects/Sunnyside";
 import Blogr from "./Projects/Blogr";
 import Loopstudios from "./Projects/Loopstudios";
+import TipCalculator from "./Projects/TipCalculator";
 
 function CustomProjects() {
   let settings = {
@@ -42,6 +43,7 @@ function CustomProjects() {
       <Thdistributors />
       <OSRS />
       <Sunnyside />
+      <TipCalculator />
     </Container>
   );
 }
