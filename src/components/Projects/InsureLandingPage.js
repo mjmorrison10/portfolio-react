@@ -22,6 +22,9 @@ function InsureLandingPage() {
           <ComputerOutlined color="secondary" />
           <MobileScreenShareRounded color="secondary" />
           <LanguageRounded color="secondary" />
+
+
+
         </IconsWrapper>
         <Typography color="secondary">
           Frontend Challenge 25: Test your layout skills with this HTML & CSS only landing page. This challenge is perfect if you're starting to get confident in laying out web pages.

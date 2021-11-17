@@ -44,6 +44,7 @@ function Experience() {
             <ol>
               <li>Firestore</li>
               <li>Firebase</li>
+              <li>Google Auth</li>
             </ol>
           </Typography>
           <SyncWrapper>
