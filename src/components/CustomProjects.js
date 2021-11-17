@@ -22,6 +22,7 @@ import FyloDataStorage from "./Projects/FyloDataStorage";
 import CodingBootcampSlider from "./Projects/CodingBootcampSlider";
 import SocialMediaDashboardThemeSwitcher from "./Projects/SocialMediaDashboardThemeSwitcher";
 import InsureLandingPage from "./Projects/InsureLandingPage";
+import PricingComponent from "./Projects/PricingComponent";
 
 function CustomProjects() {
   let settings = {
@@ -34,7 +35,6 @@ function CustomProjects() {
     centermode: true,
     autoplaySpeed: 3000,
     adaptiveHeight: true,
-
   };
 
   return (
@@ -51,8 +51,7 @@ function CustomProjects() {
       <CodingBootcampSlider />
       <SocialMediaDashboardThemeSwitcher />
       <InsureLandingPage />
-
-
+      <PricingComponent />
 
       <Michaeljobs />
       <RockPaperScissors />
@@ -63,7 +62,6 @@ function CustomProjects() {
     </Container>
   );
 }
-
 
 export default CustomProjects;
 
