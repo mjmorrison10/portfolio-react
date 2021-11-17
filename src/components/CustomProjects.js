@@ -16,6 +16,12 @@ import Blogr from "./Projects/Blogr";
 import Loopstudios from "./Projects/Loopstudios";
 import TipCalculator from "./Projects/TipCalculator";
 import Crowdfunding from "./Projects/Crowdfunding";
+import TestimonialsGrid from "./Projects/TestimonialsGrid";
+import TimeTracking from "./Projects/TimeTracking";
+import FyloDataStorage from "./Projects/FyloDataStorage";
+import CodingBootcampSlider from "./Projects/CodingBootcampSlider";
+import SocialMediaDashboardThemeSwitcher from "./Projects/SocialMediaDashboardThemeSwitcher";
+import InsureLandingPage from "./Projects/InsureLandingPage";
 
 function CustomProjects() {
   let settings = {
@@ -33,19 +39,27 @@ function CustomProjects() {
 
   return (
     <Container {...settings}>
-
+      <FAQAccordionCard />
+      <TimeTracking />
+      <TipCalculator />
+      <Sunnyside />
       <Blogr />
+      <Crowdfunding />
       <Loopstudios />
+      <TestimonialsGrid />
+      <FyloDataStorage />
+      <CodingBootcampSlider />
+      <SocialMediaDashboardThemeSwitcher />
+      <InsureLandingPage />
+
+
+
       <Michaeljobs />
       <RockPaperScissors />
       <TicTacToe />
-      <FAQAccordionCard />
-      <CMC />
       <Thdistributors />
       <OSRS />
-      <Sunnyside />
-      <TipCalculator />
-      <Crowdfunding />
+      <CMC />
     </Container>
   );
 }

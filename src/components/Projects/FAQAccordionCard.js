@@ -24,7 +24,7 @@ function FAQAccordionCard() {
           <LanguageRounded color="secondary" />
         </IconsWrapper>
         <Typography color="secondary">
-          In this challenge, you'll be building out an FAQ accordion. This is an
+        Frontend Challenge 5: In this challenge, you'll be building out an FAQ accordion. This is an
           extremely common front-end pattern, so it's a great opportunity to get
           some practice in!
         </Typography>

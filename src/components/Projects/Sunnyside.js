@@ -24,7 +24,7 @@ function Sunnyside() {
           <LanguageRounded color="secondary" />
         </IconsWrapper>
         <Typography color="secondary">
-          This challenge will be a perfect test of your layout and responsive
+        Frontend Challenge 16: This challenge will be a perfect test of your layout and responsive
           skills. There's a tiny bit of JS for the mobile menu, but the focus is
           HTML and CSS.
         </Typography>

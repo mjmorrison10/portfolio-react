@@ -6,14 +6,14 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-import BlogrImg from "../../assets/images/fem-17-blogr-landing-page-main.png";
+import Background from "../../assets/images/fem-22-fylo-data-storage-component-master.jpg";
 
-function Blogr() {
+function FyloDataStorage() {
   return (
     <Projectwrapper>
       <ProjectInfo>
         <Typography variant="h2" color="primary">
-          Blogr landing page
+          Fylo data storage component
         </Typography>
         <Typography variant="h3" color="secondary">
           web
@@ -24,14 +24,14 @@ function Blogr() {
           <LanguageRounded color="secondary" />
         </IconsWrapper>
         <Typography color="secondary">
-        Frontend Challenge 17: Flex your layout muscles with this landing page challenge. You'll
-          mostly be working with HTML and CSS for this project with a tiny bit
-          of JS for the mobile menu.
+          Frontend Challenge 22: This component has some interesting CSS
+          challenges in the design. If you're looking to test your CSS skills,
+          this will be a great project for you!
         </Typography>
         <Button
           variant="contained"
           color="primary"
-          href="https://bit.ly/fem-17-mjm-site"
+          href="https://bit.ly/fem-22-mjm-site"
         >
           Visit Website
         </Button>
@@ -41,7 +41,7 @@ function Blogr() {
   );
 }
 
-export default Blogr;
+export default FyloDataStorage;
 
 const Projectwrapper = styled.div`
   display: flex;
@@ -89,11 +89,10 @@ const ProjectInfo = styled.div`
 `;
 
 const ProjectImage = styled.div`
-  /* height: 25em; */
-  height: 40em;
   margin-left: 1em;
+  height: 40em;
   flex: 1;
-  background-image: url(${BlogrImg});
+  background-image: url(${Background});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: contain;

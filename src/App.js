@@ -32,7 +32,7 @@ const Container = styled.div`
   h2,
   h3,
   p,
-  svg, {
+  svg {
     text-shadow: -1px 0 2.5px rgba(0, 0, 0, 1), 0 1px 2.5px rgba(0, 0, 0, 1),
       1px 0 2.5px rgba(0, 0, 0, 1), 0 -1px 2.5px rgba(0, 0, 0, 1);
   }
@@ -49,7 +49,6 @@ const Container = styled.div`
     font-weight: 600;
   }
 `;
-
 
 const christmas = createTheme({
   palette: {

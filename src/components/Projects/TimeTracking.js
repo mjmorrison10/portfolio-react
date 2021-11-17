@@ -6,14 +6,14 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-import BlogrImg from "../../assets/images/fem-17-blogr-landing-page-main.png";
+import Background from "../../assets/images/fem-14-time-tracking-dashboard-main.png";
 
-function Blogr() {
+function TimeTracking() {
   return (
     <Projectwrapper>
       <ProjectInfo>
         <Typography variant="h2" color="primary">
-          Blogr landing page
+          Time Tracking Dashboard
         </Typography>
         <Typography variant="h3" color="secondary">
           web
@@ -24,14 +24,14 @@ function Blogr() {
           <LanguageRounded color="secondary" />
         </IconsWrapper>
         <Typography color="secondary">
-        Frontend Challenge 17: Flex your layout muscles with this landing page challenge. You'll
-          mostly be working with HTML and CSS for this project with a tiny bit
-          of JS for the mobile menu.
+          Frontend Challenge 14: A perfect opportunity to practice your CSS Grid
+          skills. For anyone wanting to take it up a notch, we provide a JSON
+          data file to practice working with data.
         </Typography>
         <Button
           variant="contained"
           color="primary"
-          href="https://bit.ly/fem-17-mjm-site"
+          href="https://bit.ly/fem-14-mjm-site"
         >
           Visit Website
         </Button>
@@ -41,7 +41,7 @@ function Blogr() {
   );
 }
 
-export default Blogr;
+export default TimeTracking;
 
 const Projectwrapper = styled.div`
   display: flex;
@@ -89,11 +89,10 @@ const ProjectInfo = styled.div`
 `;
 
 const ProjectImage = styled.div`
-  /* height: 25em; */
-  height: 40em;
   margin-left: 1em;
+  height: 40em;
   flex: 1;
-  background-image: url(${BlogrImg});
+  background-image: url(${Background});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: contain;

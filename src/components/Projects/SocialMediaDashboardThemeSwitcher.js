@@ -6,42 +6,41 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-import BlogrImg from "../../assets/images/fem-17-blogr-landing-page-main.png";
+import Background from "../../assets/images/fem-24-social-media-dashboard-with-theme-switcher-master.jpg";
 
-function Blogr() {
-  return (
-    <Projectwrapper>
-      <ProjectInfo>
-        <Typography variant="h2" color="primary">
-          Blogr landing page
-        </Typography>
-        <Typography variant="h3" color="secondary">
-          web
-        </Typography>
-        <IconsWrapper>
-          <ComputerOutlined color="secondary" />
-          <MobileScreenShareRounded color="secondary" />
-          <LanguageRounded color="secondary" />
-        </IconsWrapper>
-        <Typography color="secondary">
-        Frontend Challenge 17: Flex your layout muscles with this landing page challenge. You'll
-          mostly be working with HTML and CSS for this project with a tiny bit
-          of JS for the mobile menu.
-        </Typography>
-        <Button
-          variant="contained"
-          color="primary"
-          href="https://bit.ly/fem-17-mjm-site"
-        >
-          Visit Website
-        </Button>
-      </ProjectInfo>
-      <ProjectImage />
-    </Projectwrapper>
-  );
+function SocialMediaDashboardThemeSwitcher() {
+    return (
+        <Projectwrapper>
+        <ProjectInfo>
+          <Typography variant="h2" color="primary">
+          Social media dashboard with theme switcher
+          </Typography>
+          <Typography variant="h3" color="secondary">
+            web
+          </Typography>
+          <IconsWrapper>
+            <ComputerOutlined color="secondary" />
+            <MobileScreenShareRounded color="secondary" />
+            <LanguageRounded color="secondary" />
+          </IconsWrapper>
+          <Typography color="secondary">
+            Frontend Challenge 24: This challenge will be a perfect chance to practice your Grid skills. The color theme switcher also adds a nice additional test.
+          </Typography>
+          <Button
+            variant="contained"
+            color="primary"
+            href="https://bit.ly/fem-24-mjm-site"
+          >
+            Visit Website
+          </Button>
+        </ProjectInfo>
+        <ProjectImage />
+      </Projectwrapper>
+    )
 }
 
-export default Blogr;
+export default SocialMediaDashboardThemeSwitcher
+
 
 const Projectwrapper = styled.div`
   display: flex;
@@ -89,11 +88,10 @@ const ProjectInfo = styled.div`
 `;
 
 const ProjectImage = styled.div`
-  /* height: 25em; */
-  height: 40em;
   margin-left: 1em;
+  height: 40em;
   flex: 1;
-  background-image: url(${BlogrImg});
+  background-image: url(${Background});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: contain;

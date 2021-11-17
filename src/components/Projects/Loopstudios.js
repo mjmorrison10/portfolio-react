@@ -24,7 +24,7 @@ function Loopstudios() {
           <LanguageRounded color="secondary" />
         </IconsWrapper>
         <Typography color="secondary">
-          This challenge is perfect if you're looking to test your CSS Grid
+          Frontend Challenge 20: This challenge is perfect if you're looking to test your CSS Grid
           chops. Even without Grid, this project will be a fun one to help you
           practice your layout skills!
         </Typography>

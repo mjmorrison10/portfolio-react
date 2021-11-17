@@ -24,7 +24,7 @@ function Crowdfunding() {
           <LanguageRounded color="secondary" />
         </IconsWrapper>
         <Typography color="secondary">
-          This challenge will test both your layout and state management skills.
+        Frontend Challenge 18: This challenge will test both your layout and state management skills.
           As visitors make pledges, your goal is to keep track of the changes.
         </Typography>
         <Button
