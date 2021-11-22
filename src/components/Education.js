@@ -7,7 +7,6 @@ import Background from "../assets/images/bg-thanksgivings-2.jpg";
 import { Link } from "react-scroll";
 
 
-//fdds dds
 
 function Education() {
   return (
@@ -16,13 +15,17 @@ function Education() {
         Education
       </Typography>
       <Typography color="secondary">
-        Years ago, I learned a few programming/scripting languages, primarily
-        MSL where I learned RegEx and others.
+        {/* Years ago, I learned a few programming/scripting languages, primarily */}
+        {/* MSL where I learned RegEx and others. */}
+
+
       </Typography>
       <Typography color="secondary">
-        Over the past year, I have educated myself and others, remotely, on the
-        following:
+        I am well versed in the following languages, frameworks, and libraries (not including everything in the list)
+        {/* Over the past year, I have educated myself and others, remotely, on the */}
+        {/* following: */}
       </Typography>
+
       <WordCloudWrap>
         <ReactWordcloud
           words={words}

@@ -23,6 +23,11 @@ import CodingBootcampSlider from "./Projects/CodingBootcampSlider";
 import SocialMediaDashboardThemeSwitcher from "./Projects/SocialMediaDashboardThemeSwitcher";
 import InsureLandingPage from "./Projects/InsureLandingPage";
 import PricingComponent from "./Projects/PricingComponent";
+import Fem28 from "./Projects/Fem28";
+import Fem29 from "./Projects/Fem29";
+import Fem30 from "./Projects/Fem30";
+import Fem31 from "./Projects/Fem31";
+import Fem32 from "./Projects/Fem32";
 
 function CustomProjects() {
   let settings = {
@@ -41,7 +46,7 @@ function CustomProjects() {
     <Container {...settings}>
       <FAQAccordionCard />
       <TimeTracking />
-      <TipCalculator />
+      <TipCalculator /> 
       <Sunnyside />
       <Blogr />
       <Crowdfunding />
@@ -52,13 +57,20 @@ function CustomProjects() {
       <SocialMediaDashboardThemeSwitcher />
       <InsureLandingPage />
       <PricingComponent />
+      <Fem28 />  {/* Cliboard Landing page */}
+      <Fem29 />  {/* Huddling Landing Page with Alternative Feature Blocks */}
+      <Fem30 />  {/* Fylo Dark  Theme Landing Page */}
+      <Fem31 />  {/* Fylo Landing Page With Two Column Layout */}
+      <Fem32 />  {/* Huddle Landing Page with Curved Sections */} 
 
       <Michaeljobs />
       <RockPaperScissors />
       <TicTacToe />
       <Thdistributors />
       <OSRS />
-      <CMC />
+
+      {/* <CMC /> */}
+
     </Container>
   );
 }
