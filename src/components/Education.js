@@ -3,7 +3,7 @@ import { ExpandMore } from "@material-ui/icons";
 import React from "react";
 import ReactWordcloud from "react-wordcloud";
 import styled from "styled-components";
-import Background from "../assets/images/bg-thanksgivings-2.jpg";
+import Background from "../assets/images/bg-white-4.jpg";
 import { Link } from "react-scroll";
 
 
@@ -51,7 +51,7 @@ export default Education;
 const Container = styled.div`
   min-height: 100vh;
   width: 100vw;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(${Background});
+  background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),  url(${Background});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: cover;

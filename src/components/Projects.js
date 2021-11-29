@@ -3,7 +3,7 @@ import { ExpandMore } from "@material-ui/icons";
 import React from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
-import Background from "../assets/images/bg-thanksgivings-5.jpg";
+import Background from "../assets/images/bg-white-3.jpg";
 import CustomProjects from "./CustomProjects";
 
 function Projects() {
@@ -34,7 +34,7 @@ const Container = styled.div`
   position: relative;
   min-height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     url(${Background});
   background-repeat: no-repeat, no-repeat;
   background-position: center;

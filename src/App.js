@@ -11,7 +11,7 @@ import styled from "styled-components";
 
 function App() {
   return (
-    <ThemeProvider theme={thanksgivings}>
+    <ThemeProvider theme={christmas}>
       <Container>
         <Header />
         <Home />

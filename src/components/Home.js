@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Background from "../assets/images/bg-thanksgivings-8.png";
+import Background from "../assets/images/bg-white-1.jpg";
 import { Typography } from "@material-ui/core";
 import {
   Email,
@@ -84,7 +84,7 @@ const Container = styled.div`
   min-height: 100vh;
   width: 100%;
   background-color: rgb(255, 255, 255);
-  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),  url(${Background});
+  background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),  url(${Background});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: cover;
