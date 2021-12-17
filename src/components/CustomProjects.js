@@ -28,6 +28,8 @@ import Fem29 from "./Projects/Fem29";
 import Fem30 from "./Projects/Fem30";
 import Fem31 from "./Projects/Fem31";
 import Fem32 from "./Projects/Fem32";
+import Whichbank from "./Projects/Whichbank";
+import WhichbankLanding from "./Projects/WhichbankLanding";
 
 function CustomProjects() {
   let settings = {
@@ -44,6 +46,8 @@ function CustomProjects() {
 
   return (
     <Container {...settings}>
+      <Whichbank />
+      <WhichbankLanding />
       <FAQAccordionCard />
       <TimeTracking />
       <TipCalculator /> 

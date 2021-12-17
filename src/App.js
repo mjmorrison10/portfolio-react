@@ -35,6 +35,7 @@ const Container = styled.div`
     text-shadow: -1px 0 1px rgba(255, 255, 255, 1), 0 1px 1px rgba(255, 255, 255, 1),
       1px 0 1px rgba(255, 255, 255, 1), 0 -1px 1px rgba(255, 255, 255, 1);
   }
+
   h1 {
     font-weight: 900;
   }
