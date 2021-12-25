@@ -34,7 +34,7 @@ const Container = styled.div`
   position: relative;
   min-height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     url(${Background});
   background-repeat: no-repeat, no-repeat;
   background-position: center;

@@ -30,6 +30,7 @@ import Fem31 from "./Projects/Fem31";
 import Fem32 from "./Projects/Fem32";
 import Whichbank from "./Projects/Whichbank";
 import WhichbankLanding from "./Projects/WhichbankLanding";
+import Mapty from "./Projects/Mapty";
 
 function CustomProjects() {
   let settings = {
@@ -46,6 +47,7 @@ function CustomProjects() {
 
   return (
     <Container {...settings}>
+      <Mapty />
       <Whichbank />
       <WhichbankLanding />
       <FAQAccordionCard />
