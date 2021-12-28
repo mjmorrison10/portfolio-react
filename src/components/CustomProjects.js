@@ -31,6 +31,7 @@ import Fem32 from "./Projects/Fem32";
 import Whichbank from "./Projects/Whichbank";
 import WhichbankLanding from "./Projects/WhichbankLanding";
 import Mapty from "./Projects/Mapty";
+import Forkify from "./Projects/Forkify";
 
 function CustomProjects() {
   let settings = {
@@ -47,6 +48,7 @@ function CustomProjects() {
 
   return (
     <Container {...settings}>
+      <Forkify />
       <Mapty />
       <Whichbank />
       <WhichbankLanding />
