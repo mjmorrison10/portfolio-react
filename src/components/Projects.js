@@ -5,6 +5,8 @@ import { Link } from "react-scroll";
 import styled from "styled-components";
 import Background from "../assets/images/bg-white-3.jpg";
 import CustomProjects from "./CustomProjects";
+import * as Config from './ComponentsConfig'
+
 
 function Projects() {
   return (
@@ -34,8 +36,7 @@ const Container = styled.div`
   position: relative;
   min-height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(${Background});
+  background-image: linear-gradient( ${Config.background}), url(${Background});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: cover;

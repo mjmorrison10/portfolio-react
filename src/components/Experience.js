@@ -4,8 +4,8 @@ import React from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
 import Background from "../assets/images/bg-white-2.jpg";
-
-
+import * as Config from './ComponentsConfig'
+ 
 function Experience() {
   return (
     <Container id="experience">
@@ -88,7 +88,7 @@ export default Experience;
 const Container = styled.div`
   min-height: 100vh;
   width: 100vw;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url(${Background});
+  background-image: linear-gradient( ${Config.background}), url(${Background});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: cover;

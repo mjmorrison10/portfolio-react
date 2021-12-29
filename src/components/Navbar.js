@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import styled from "styled-components";
 import "./test.css";
 
+
 function Navbar() {
   // const articleRef = useRef();
 

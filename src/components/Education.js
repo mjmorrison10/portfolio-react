@@ -5,8 +5,7 @@ import ReactWordcloud from "react-wordcloud";
 import styled from "styled-components";
 import Background from "../assets/images/bg-white-4.jpg";
 import { Link } from "react-scroll";
-
-
+import * as Config from "./ComponentsConfig";
 
 function Education() {
   return (
@@ -17,11 +16,10 @@ function Education() {
       <Typography color="secondary">
         {/* Years ago, I learned a few programming/scripting languages, primarily */}
         {/* MSL where I learned RegEx and others. */}
-
-
       </Typography>
       <Typography color="secondary">
-        I am well versed in the following languages, frameworks, and libraries (not including everything in the list)
+        I am well versed in the following languages, frameworks, and libraries
+        (not including everything in the list)
         {/* Over the past year, I have educated myself and others, remotely, on the */}
         {/* following: */}
       </Typography>
@@ -51,7 +49,8 @@ export default Education;
 const Container = styled.div`
   min-height: 100vh;
   width: 100vw;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),  url(${Background});
+  background-image: linear-gradient(${Config.background}), url(${Background});
+
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: cover;
@@ -111,7 +110,6 @@ const ExpandMoreWrapper = styled.div`
     transform: scale(2);
   }
 `;
-
 
 const words = [
   {

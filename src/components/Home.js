@@ -11,6 +11,7 @@ import {
   LinkedIn,
 } from "@material-ui/icons";
 import { Link } from "react-scroll";
+import * as Config from "./ComponentsConfig";
 
 function Home() {
   return (
@@ -30,7 +31,6 @@ function Home() {
       <Typography color="secondary">
         ...am dedicated to learning as much as possible!
       </Typography>
-      
 
       <SocialMedia>
         <Facebook
@@ -61,7 +61,6 @@ function Home() {
         <Email
           color="primary"
           fontSize="large"
-          
           onClick={() =>
             window.open("mailto:mjmorrison10@outlook.com", "_blank")
           }
@@ -84,7 +83,7 @@ const Container = styled.div`
   min-height: 100vh;
   width: 100%;
   background-color: rgb(255, 255, 255);
-  background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),  url(${Background});
+  background-image: linear-gradient(${Config.background}), url(${Background});
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: cover;

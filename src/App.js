@@ -32,8 +32,8 @@ const Container = styled.div`
   h2,
   h3,
   p {
-    text-shadow: -1px 0 1px rgba(255, 255, 255, 1), 0 1px 1px rgba(255, 255, 255, 1),
-      1px 0 1px rgba(255, 255, 255, 1), 0 -1px 1px rgba(255, 255, 255, 1);
+    /* text-shadow: -1px 0 1px rgba(255, 255, 255, 1), 0 1px 1px rgba(255, 255, 255, 1), */
+    /* 1px 0 1px rgba(255, 255, 255, 1), 0 -1px 1px rgba(255, 255, 255, 1); */
   }
 
   h1 {
@@ -50,10 +50,28 @@ const Container = styled.div`
   }
 `;
 
+const themePrestige = createTheme({
+  palette: {
+    primary: {
+      main: "#5DB7DE",
+    },
+    secondary: {
+      main: "#1CFEBA",
+    },
+    third: {
+      main: "#FCFF4B",
+    },
+    background: {
+      main: '#0D1321'
+    }
+  },
+});
+
 const christmas = createTheme({
   palette: {
     primary: {
-      main: "#B3000C",
+      main: "#E0000F",
+      // main: "#B3000C",
       dark: "#008020",
       light: "#00e639",
     },

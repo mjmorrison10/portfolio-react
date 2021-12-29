@@ -1,11 +1,12 @@
 import { Button, Typography } from "@material-ui/core";
 import React from "react";
 import styled from "styled-components";
-import Background from "../assets/images/bg-white-1.jpg";
+import Background from "../assets/images/bg-white-5.jfif";
 import Footer from "./Footer";
 import ContactForm from "./ContactForm";
+import * as Config from "./ComponentsConfig";
 
-
+ 
 function Contact() {
   return (
     <Container id="contact">
@@ -46,7 +47,7 @@ export default Contact;
 const Container = styled.div`
   min-height: 100vh;
   width: 100vw;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),  url(${Background});
+  background-image: linear-gradient(${Config.background}), url(${Background});
   background-repeat: no-repeat, no-repeat;
   background-position: right;
   background-size: cover;
